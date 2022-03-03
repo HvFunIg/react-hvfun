@@ -1,0 +1,16 @@
+.inProgress{
+    position: relative;
+}
+.inProgress-bigCurve{
+
+    animation: move 1s linear infinite;
+    transform-origin: 43px 38px;
+}
+@keyframes move {
+    100% {
+
+        transform: rotate(-360deg);
+
+    }
+
+}

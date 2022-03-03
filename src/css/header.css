@@ -1,0 +1,113 @@
+
+header{
+    display: flex;
+    /*border: 2px solid var(--blue-light);*/
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    padding: 0 20px;
+    /*background-color: #fff;*/
+    background-color: #000000;
+    z-index: 999;
+}
+
+
+/** Ссылки **/
+.navLink {
+    align-self: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 15px;
+    white-space: nowrap;
+    outline:none;
+    transition-duration: 0.4s;
+    margin: 0px 20px;
+    cursor: pointer;
+    /*color: #2B2A2C;*/
+    color:white;
+    position: relative;
+
+    text-decoration: none;
+}
+.navLink:lang(en) {
+    font-family: 'Michroma', sans-serif;
+}
+.navLink:hover {
+    color: var(--blue-light);
+}
+.navLink:hover:not(.nav__link--btn):after {
+    display: block;
+    width: 100%;
+
+}
+.navLink:after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #2B2A2C;
+    background-color: var(--blue-light);;
+
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    z-index: 1;
+    transition: width 0.2s linear;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+
+}
+.profile h2{
+    margin: 0;
+    font-size: 18px;
+    line-height: 34px;
+    color: white;
+}
+.profile h1{
+    margin: 0;
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Michroma', sans-serif;
+    color: var(--blue-light);
+}
+
+.lang{
+    font-family: 'Michroma', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 34px;
+    color: white;
+
+}
+.lang-button{
+    border: none;
+    font-size: 14px;
+    color: white;
+}
+.lang-button:hover{
+    box-shadow: 1px 1px 10px 2px var(--blue-light), 1px 1px 5px 2px var(--blue-light) inset;
+    font-size: 14px;
+    color: white;
+}
+header button:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px){
+    header{
+        font-size: 14px;
+        height: 60px;
+    }
+    .navLink {
+        padding: 0 5px;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "projects-header":"Портфолио",
+  "projects-header-type1":"Все",
+  "projects-header-type2":"Веб сайты",
+  "projects-header-type3":"AR - приложения",
+
+  "projects-desc0":"Сайт",
+  "projects-desc1":"AR - приложение",
+
+  "project1-header":"Пром Снаб Защита",
+  "project2-header":"AR Расписание",
+  "project3-header":"Личный сайт",
+  "project4-header":"Hammer Packaging",
+
+  "project1-text":"Сайт для компании 'ООО ПромСнабЗащита'",
+  "project2-text":"Приложение дополненной реальности для отслеживания занятости аудитории в реальном времени",
+  "project3-text":"Красивый сайт, на который вы сейчас смотрите",
+  "project4-text":"Заказчик перестал выходить на связь",
+
+  "more":"Подробнее"
+}

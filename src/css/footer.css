@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    color: white;
+    flex-wrap: wrap;
+    padding:  20px 40px;
+}
+footer h1 {
+    font-weight: bold;
+    font-style: normal;
+}
+footer h2 {
+    display: inline-block;
+    font-weight: 300;
+    border-bottom: 2px solid var(--main-light);
+}
+.copyright{
+    text-align: center;
+}

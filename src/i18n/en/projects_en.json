@@ -1,0 +1,21 @@
+{
+  "projects-header":"My portfolio",
+  "projects-header-type1":"All",
+  "projects-header-type2":"Websites",
+  "projects-header-type3":"AR - apps",
+
+  "projects-desc0":"Website",
+  "projects-desc1":"AR - app",
+
+  "project1-header":"Prom Snab Zashita",
+  "project2-header":"AR Timetable",
+  "project3-header":"Personal website",
+  "project4-header":"Hammer Packaging",
+
+  "project1-text":"Website for PromSnabZashita.",
+  "project2-text":"AR application for Android 7.0+. ",
+  "project3-text":"Beautiful Hi-Tech site, isn't it?",
+  "project4-text":"This project is not in use.",
+
+  "more":"See more"
+}

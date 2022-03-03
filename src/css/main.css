@@ -1,0 +1,157 @@
+@import url("./variables.css");
+
+
+:lang(en) {
+    font-family: 'Monda', sans-serif;
+    font-weight: normal;
+}
+:lang(ru){
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+}
+.Michroma:lang(en){
+    font-family: 'Michroma', sans-serif;
+}
+body{
+    margin: 0;
+    font-size: 18px;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    /*height: 100vh;*/
+}
+address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-style: normal;
+
+}
+address a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    border: var(--blue-light) 1px solid;
+    box-shadow: 1px 1px 10px 2px var(--blue-light);
+    width: 100%;
+}
+h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    z-index: 2;
+    margin: 0;
+}
+button{
+
+    border: 1px solid white;
+    box-sizing: border-box;
+    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    background-color: transparent;
+    text-transform: uppercase;
+
+    color: white;
+
+    transition-duration: 0.3s;
+}
+button:lang(en){
+    font-family: 'Michroma', sans-serif;
+}
+
+button:hover{
+    color: var(--blue-light);
+    border-color:  var(--blue-light);
+    box-shadow: 1px 1px 10px 2px var(--blue-light), 1px 1px 5px 2px var(--blue-light) inset;
+
+    cursor: pointer;
+}
+.button-transparent{
+    border: none;
+    padding: 0 20px;
+    color: white;
+}
+.button-transparent:hover{
+    box-shadow: none;
+    border: none;
+    padding: 0 20px;
+    background-color: transparent;
+
+    text-shadow: 0px 1px 15px #ffffff;
+}
+.temp-block{
+    background: linear-gradient(to top, #ffffff, #616161);
+    box-shadow: black 1px 1px 10px;
+    border: 2px dashed black;
+}
+.temp-container{
+    background: linear-gradient(to top, #ffffff, #c9c9c9);
+    box-shadow: black 1px 1px 10px;
+    border: 2px dashed black;
+}
+
+/* Выравнивание */
+.container {
+    display: flex;
+    justify-content: center;
+}
+.container-vertical {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-wide {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+.light-neon{
+    color: var(--blue-light);
+    text-shadow: 0px 1px 3px #00ECFB;
+}
+.strikethrough{
+    text-decoration: line-through;
+}
+@media screen and (max-width: 1024px){
+    body{
+        font-size: 14px;
+    }
+    button{
+        height: 2rem;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    h1{
+        margin: 5px 0;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+
+    h1{
+        margin: 5px 0;
+        font-size: 24px;
+    }
+}
+
