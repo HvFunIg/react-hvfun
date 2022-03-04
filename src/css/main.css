@@ -14,7 +14,7 @@
 }
 body{
     margin: 0;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 
@@ -130,13 +130,17 @@ button:hover{
 }
 .strikethrough{
     text-decoration: line-through;
+    font-size: 24px;
 }
+
 @media screen and (max-width: 1024px){
     body{
-        font-size: 14px;
+        font-size: 18px;
+    }
+    p{
+        line-height: 24px;
     }
     button{
-        height: 2rem;
         font-size: 14px;
         padding: 0 10px;
     }
@@ -148,7 +152,10 @@ button:hover{
 
 @media screen and (max-width: 480px){
 
-
+    .strikethrough{
+        text-decoration: line-through;
+        font-size: 18px;
+    }
     h1{
         margin: 5px 0;
         font-size: 24px;

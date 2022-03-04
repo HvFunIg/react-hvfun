@@ -16,15 +16,18 @@ const Intro = ({img}) => {
 
     return(
         <section className="intro" >
-            <img src={img} alt="My photo" className="intro-img"/>
+                <img src={img} alt="My photo" className="intro-img"/>
+
 
             <div className="intro-bookmark">
-                <img className="intro-svg" src={Bookmark} alt={"About me"}/>
-                <div className="intro-text">
+                { width > 850 ?
+                    <img className="intro-svg" src={Bookmark} alt={"About me"}/>
+                : ''}
+                    <div className="intro-text">
                     <h1> {t("hello")}</h1>
-                    <p className="strikethrough">{t("strikethrough1")} </p>
-                    <p className="strikethrough">{t("strikethrough2")} </p>
-                    <p >{t("desc")} </p>
+                    <p className="strikethrough light-neon">{t("strikethrough1")} </p>
+                    <p className="strikethrough light-neon">{t("strikethrough2")} </p>
+                    <p className="light-neon">{t("desc")} </p>
                 </div>
                 <div className="intro-contacts">
                     <div className="intro-buttons">

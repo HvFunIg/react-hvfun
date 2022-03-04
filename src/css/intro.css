@@ -21,7 +21,6 @@
 .intro-svg{
     position: absolute;
     right: 0;
-    width: 100%;
     height: 100%;
     z-index: -1;
 }
@@ -30,14 +29,11 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-
+    align-items: flex-start;
+    width: 50%;
     color: white;
 }
 
-.intro-text h1{
-    width: 50%;
-}
 .intro-text p{
     padding: 0;
     margin: 0;
@@ -45,19 +41,14 @@
 .intro-contacts{
     display: flex;
     width: 65%;
+}
 
-}
-.intro-social{
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    padding: 0 20px;
-}
 .intro-buttons{
     display: flex;
     width: 55%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .intro-button{
     min-width: 100%;
@@ -69,6 +60,12 @@
 .intro-button:nth-child(2){
     margin: 5px 0px 0 50px;
 }
+.intro-social{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding: 0 50px;
+}
 .hex-social{
     width: 62px;
     margin: -5px;
@@ -78,6 +75,24 @@
 }
 .hex-social:nth-child(2n){
     align-self: flex-end;
+    margin: 0;
+}
+
+@media screen and (max-width: 1680px){
+    .intro-text{
+        width: 70%;
+    }
+    .intro-contacts{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1550px){
+    .intro-text{
+        width: 80%;
+    }
+    .intro-contacts{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1224px){
@@ -85,42 +100,126 @@
         height: 400px;
         padding-right: 25px;
     }
-    .intro-hexes{
-        height: 400px;
-        width: 400px;
-        bottom: 0;
+    .intro-bookmark{
+        height: 450px;
     }
+
+    .intro-text{
+        width: 70%;
+        padding:10px 0 0 0 ;
+    }
+    .intro-buttons{
+        width: 50%;
+    }
+    .intro-contacts{
+        justify-content: flex-end;
+
+    }
+    .intro-social{
+        width: 70px;
+    }
+    .hex-social{
+        width: 42px;
+    }
+}
+@media screen and (max-width: 1124px){
+    .intro h1 {
+        line-height: 46px;
+    }
+    .intro-text{
+        width: 80%;
+        padding: 5px 10px;
+    }
+
 }
 @media screen and (max-width: 1024px){
-    .intro h1 {
-        font-weight: 700;
-        font-size: 36px;
-        color: var(--blue-dark);
+    .intro{
+        padding: 50px 0;
+    }
+    .intro-text{
+        width: 100%;
     }
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 855px){
     .intro  {
+        position: relative;
         flex-direction: column;
         align-items: center;
+        height: 100vh;
     }
-    .intro-right{
+    .intro-img{
+        height: auto;
         width: auto;
-        padding: 20px;
+        padding: 10px 0;
+        max-height: 450px;
+        flex-grow: 3;
+    }
+    .intro-bookmark{
+        /*position: absolute;
+        bottom: 0;
+        height: auto;
+         */
+        width: 100%;
+
+        padding: 10px 0 20px 0;
+        background: linear-gradient(179.46deg, #434242 13.29%, #000000 83.64%);
+        align-items: center;
     }
     .intro-text{
         position: relative;
-        bottom: auto;
-        right: auto;
+        width: 80%;
     }
-    .intro-text h1{
+    .intro-text :nth-child(n){
+        padding: 4px 20px;
+    }
+
+    .intro-contacts{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .intro-social{
+        padding: 20px 0;
+        flex-direction: row;
+        justify-content: center;
+        height: 60px;
+        width: 100px;
+    }
+    .hex-social{
+        margin: -10px;
+        align-self: flex-start;
+    }
+    .hex-social:nth-child(2n){
+        align-self: flex-end;
+        margin: -10px;
+    }
+    .intro-button:nth-child(n){
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 575px){
+
+    .intro-img{
+        height: 45%;
         width: auto;
     }
-    .intro-buttons{
-        position: relative;
-        bottom: auto;
-        right: auto;
+    .intro-bookmark{
+        height: auto;
     }
-    .intro-button:first-child,.intro-button:nth-child(2){
-        margin: 5px;
+    .intro-contacts{
+        flex-direction: column;
+    }
+    .intro-social{
+       padding-bottom: 20px;
+    }
+    .intro-text h1{
+        line-height: 42px;
+    }
+    .intro-buttons{
+        width: 80%;
+    }
+    .intro-img{
+
     }
 }

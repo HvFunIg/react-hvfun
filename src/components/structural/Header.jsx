@@ -10,6 +10,7 @@ import NavLinks from "../NavLinks";
 import {Link} from "react-router-dom";
 import Button from "./Button";
 import Profile from "../Profile";
+import LangChanger from "../LangChanger";
 
 /**  Бургер из модуля react-burger-menu **/
 
@@ -33,22 +34,7 @@ const Header = () => {
             <header>
                 <Profile name={t("name")} about={" AR, Frontend"}/>
                 <NavLinks links={links} linksTo={linksTo}/>
-                <div className="lang">
-                    <button className="lang-button"
-                            type="button"
-                            onClick={() => changeLanguage('ru')}
-                            lang="en">
-                        ru
-                    </button>
-                    /
-                    <button
-                        className="lang-button"
-                        type="button"
-                        onClick={() => changeLanguage('en')}
-                        lang="en">
-                        en
-                    </button>
-                </div>
+                <LangChanger />
             </header>
         )
     else
@@ -58,6 +44,8 @@ const Header = () => {
                     {links.map((link,index) =>
                         <Link to={linksTo[index]} className="menu-item" key={index}> {link}</Link>)}
                 </Menu>
+            <LangChanger />
+
             </header>
         )
 }

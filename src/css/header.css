@@ -33,6 +33,7 @@ header{
     color:white;
     position: relative;
 
+    font-size: 18px;
     text-decoration: none;
 }
 .navLink:lang(en) {
@@ -80,6 +81,7 @@ header{
 }
 
 .lang{
+
     font-family: 'Michroma', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -109,5 +111,9 @@ header button:hover{
     }
     .navLink {
         padding: 0 5px;
+    }
+    .lang{
+        position: absolute;
+        left: 40px;
     }
 }
