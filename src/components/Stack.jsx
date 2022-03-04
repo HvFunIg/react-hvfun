@@ -7,7 +7,6 @@ const Stack = () => {
     return(
         <section>
 
-            <InProgress/>
         </section>
     )
 }

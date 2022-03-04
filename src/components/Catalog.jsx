@@ -29,7 +29,7 @@ const Catalog = ({header,sortBy}) => {
     //Метод unshift вставляет переданные значения в начало массивоподобного объекта
     options.unshift({value:"all",label:t("projects-header-type1")})
     const sort = width > 1024 ?
-        <div>
+        <div className="sort-main">
             <ul>
                 <li
                     className={activeCategory === "all" ? "sort sort-active" : "sort"}

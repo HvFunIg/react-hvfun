@@ -162,3 +162,8 @@ button:hover{
     }
 }
 
+@media screen and (max-width: 550px){
+    h3{
+        margin:0 4px;
+    }
+}

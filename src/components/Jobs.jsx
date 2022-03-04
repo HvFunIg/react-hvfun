@@ -7,7 +7,6 @@ const Jobs = ({children}) => {
     return(
         <section>
             {children}
-            <InProgress/>
         </section>
     )
 }

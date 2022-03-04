@@ -134,7 +134,7 @@
 }
 @media screen and (max-width: 1024px){
     .intro{
-        padding: 50px 0;
+        padding: 50px 0 20px 0;
     }
     .intro-text{
         width: 100%;
@@ -152,7 +152,7 @@
         height: auto;
         width: auto;
         padding: 10px 0;
-        max-height: 450px;
+        max-height: 360px;
         flex-grow: 3;
     }
     .intro-bookmark{
@@ -199,10 +199,12 @@
 }
 
 @media screen and (max-width: 575px){
-
+    .intro{
+        height: auto;
+    }
     .intro-img{
-        height: 45%;
         width: auto;
+        max-width: 80%;
     }
     .intro-bookmark{
         height: auto;

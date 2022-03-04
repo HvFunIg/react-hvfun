@@ -7,7 +7,6 @@ const AboutMe = () => {
     return(
         <section>
 
-            <InProgress/>
         </section>
     )
 }

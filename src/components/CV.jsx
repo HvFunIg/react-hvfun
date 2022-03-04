@@ -22,7 +22,6 @@ const CV = () => {
 
                 </Stack>
             </div>
-            <InProgress/>
         </section>
     )
 }
