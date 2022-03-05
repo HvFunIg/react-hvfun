@@ -9,14 +9,17 @@ import Stack from "./Stack";
 import Job from "./Job";
 
 const CV = () => {
-    const { t, i18n } = useTranslation(); //t - основная функция для перевода
+    const { t, i18n } = useTranslation('CV'); //t - основная функция для перевода
 
     return(
         <section>
             <h1> {t("test_message")} </h1>
             <div>
                 <Jobs>
-                    <Job date={"12.12.12"} header={"Temp"}/>
+                    {t("JobsArray", {returnObjects:true}).map((job, id) =>{
+                        return <Job period={job.period} header={job.type} place={job.place}/>
+                    })}
+
                 </Jobs>
                 <Stack>
 
