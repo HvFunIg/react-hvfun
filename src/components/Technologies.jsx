@@ -2,23 +2,22 @@ import React from 'react';
 import PropTypes from "prop-types";
 import Tech from "./Tech";
 import {useTranslation} from "react-i18next";
-import Job from "./Job";
 
 
-const Jobs = ({header,stack}) => {
+const Technologies = ({header,stack}) => {
     const {t} = useTranslation('CV'); //t - основная функция для перевода
 
     return <>
         <h3 className="skill-header">{header}</h3>
-        <div className="skill-block">
-            {stack.map((tech) =>  <Job period={tech.period} place={tech.place}/>)}
-        </div>
-    </>
+            <div className="skill-block">
+                {stack.map((tech) =>  <Tech tech={tech.tech} header={t(tech.header)} icon={tech.icon}/>)}
+            </div>
+        </>
 
 }
-Jobs.propTypes = {
+Technologies.propTypes = {
     header: PropTypes.string,
     stack:PropTypes.arrayOf(PropTypes.object)
 };
 
-export default Jobs;
+export default Technologies;

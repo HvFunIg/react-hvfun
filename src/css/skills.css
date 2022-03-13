@@ -1,0 +1,151 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.panels{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.skills-frame{
+    position: absolute;
+    height: 100%;
+}
+.skills-frame--left{
+    left: 0;
+}
+.skills-frame--right{
+    right:0;
+
+}
+.skills-frame img{
+    height: 100%;
+    width:14vw;
+    max-width: 160px;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    max-width: 800px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.skill-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2px 0;
+    filter: drop-shadow(-4px 7px 2px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(6px);
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.83);
+    padding: 0 10px;
+
+    min-height: 25px;
+}
+.skill-header{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:  0;
+}
+.tech{
+    justify-content: flex-start;
+}
+
+.tech-img{
+    width: auto;
+    height: 100%;
+    padding-left: 30px;
+}
+.job-content{
+
+}
+.job-content-period{
+    padding-left: 40px;
+    width: 40%;
+}
+.job-content-place{
+    text-align: right;
+
+}
+@media screen and (max-width: 1100px){
+    .skills-frame img{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .tech-content{
+        height: 20px;
+    }
+
+    .skill-content:after{
+
+        height: 8px;
+        width: 8px;
+
+    }
+}
+@media screen and (max-width: 720px){
+
+}
+@media screen and (max-width: 720px) {
+    .job-content{
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .tech-content:after{
+        position: absolute;
+        content: '';
+        height: 8px;
+        width: 8px;
+
+        left: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+
+    }
+    .job-content-period{
+        width: 100%;
+        padding: 0;
+        text-decoration: underline;
+    }
+    .job-content-place{
+        text-align: left;
+    }
+    .panels{
+        flex-direction: column;
+        width: 80%;
+    }
+    .panel{
+        width: 100%;
+    }
+    .tech {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 720px) {
+    .skill:after{
+        position: absolute;
+        content: '';
+        height: 8px;
+        width: 8px;
+
+        left: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}

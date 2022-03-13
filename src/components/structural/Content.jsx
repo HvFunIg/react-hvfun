@@ -14,7 +14,7 @@ const tempArray = [1,2,3,4,5]
 
 const Content = () => {
 
-    const { t, i18n } = useTranslation('projects'); //t - основная функция для перевода
+    const { t, i18n } = useTranslation(['projects','main']); //t - основная функция для перевода
     const sortBy=[
         t("projects-header-type2"),
         t("projects-header-type3")
@@ -24,8 +24,8 @@ const Content = () => {
     return(
         <Fragment>
             <Intro text={""} img={myPhoto}/>
-            <Catalog header={ t("projects-header")} sortBy={sortBy}/>
-            <CV/>
+            <Catalog header={ t("main:header-projects")} sortBy={sortBy}/>
+            <CV header={ t("main:header-CV")}/>
             <AboutMe/>
 
         </Fragment>

@@ -190,8 +190,8 @@
 }
 @media screen and (max-width: 1090px){
     .catalog-items{
-        padding: 40px 0;
-
+        padding-top: 40px;
+        padding-bottom: 0;
     }
 }
 @media screen and (max-width: 855px){
@@ -199,6 +199,16 @@
         border-top: 50px solid white;
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
+    }
+    .catalog-fragment--2 {
+        border-left: 50px solid transparent;
+        border-bottom: 50px solid white;
+    }
+    .catalog-fragment--3 {
+
+
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid white;
     }
 }
 @media screen and (max-width: 715px){

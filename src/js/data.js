@@ -1,9 +1,11 @@
+import tech1 from "../img/icons/html.png"
 
 import img1 from "../img/Projects/Prom/preview.JPG"
 const img2 = "http://via.placeholder.com/640x360"
 const img3 = "http://via.placeholder.com/640x360"
 const img4 = "http://via.placeholder.com/640x360"
 const img5 = "http://via.placeholder.com/640x360"
+
 
 export const catalogItems = [
     {
@@ -41,5 +43,127 @@ export const catalogItems = [
         linkTo:"link4",
         data:2020,
         type:[0]
+    }
+]
+
+export const stack = [
+    {
+        header:"web",
+        stack:[
+            {
+                icon:tech1,
+                tech:"HTML",
+            },
+            {
+                icon:tech1,
+                tech:"CSS",
+            },
+
+            {
+                icon:tech1,
+                tech:"JS",
+            },
+            {
+                icon:tech1,
+                tech:"ReactJS",
+            },
+
+            {
+                icon:tech1,
+                tech:"NodeJS",
+            },
+            {
+                icon:tech1,
+                tech:"Git/GitHub",
+            },
+            {
+                icon:tech1,
+                tech:"REST",
+            },
+            {
+                icon:tech1,
+                tech:"WebSocket"
+            }
+        ]
+    },
+    {
+        header: "stack-design",
+        stack: [
+            {
+                icon:tech1,
+                tech:"Photoshop",
+            },
+            {
+                icon:tech1,
+                tech:"Figma",
+            }
+        ]
+    },
+    {
+        header:"AR",
+        stack: [
+            {
+                icon:tech1,
+                tech:"Vuforia Engine",
+            },
+            {
+                icon:tech1,
+                tech:"ThingWorx",
+            },
+            {
+                icon:tech1,
+                tech:"Unity",
+            }
+        ]
+    },
+    {
+        header: "AR",
+        stack: [
+            {
+                icon:tech1,
+                tech:"NX",
+                header:"stack-cad"
+            },
+            {
+                icon:tech1,
+                tech:"Teamcenter",
+            },
+            {
+                icon:tech1,
+                tech:"GPSS",
+            }
+        ]
+    },
+    {
+        header: "AR",
+        stack: [
+            {
+                icon:tech1,
+                tech:"MySQL",
+                header:"stack-databases"
+            },
+            {
+                icon:tech1,
+                tech:"SQL Server",
+            },
+            {
+                icon:tech1,
+                tech:"Oracle",
+            },
+        ]
+    },
+    {
+        header:"stack-programming",
+        stack: [
+            {
+                icon:tech1,
+                tech:"C++",
+
+            },
+            {
+                icon:tech1,
+                tech:"С#",
+            },
+        ]
     }
 ]
