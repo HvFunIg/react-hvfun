@@ -8,12 +8,11 @@ import Job from "./Job";
 const Jobs = ({header,stack}) => {
     const {t} = useTranslation('CV'); //t - основная функция для перевода
 
-    return <>
-        <h3 className="skill-header">{header}</h3>
-        <div className="skill-block">
-            {stack.map((tech) =>  <Job period={tech.period} place={tech.place}/>)}
-        </div>
-    </>
+    return <div className="about-ice">
+        <h3 >{header}</h3>
+        <hr/>
+            {stack.map((job) =>  <Job period={job.period} place={job.place}/>)}
+    </div>
 
 }
 Jobs.propTypes = {

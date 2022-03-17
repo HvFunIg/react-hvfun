@@ -10,7 +10,7 @@ const Technologies = ({header,stack}) => {
     return <>
         <h3 className="skill-header">{header}</h3>
             <div className="skill-block">
-                {stack.map((tech) =>  <Tech tech={tech.tech} header={t(tech.header)} icon={tech.icon}/>)}
+                {stack.map((tech) =>  <Tech tech={tech.tech}  icon={tech.icon}/>)}
             </div>
         </>
 

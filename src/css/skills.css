@@ -69,17 +69,7 @@
     height: 100%;
     padding-left: 30px;
 }
-.job-content{
 
-}
-.job-content-period{
-    padding-left: 40px;
-    width: 40%;
-}
-.job-content-place{
-    text-align: right;
-
-}
 @media screen and (max-width: 1100px){
     .skills-frame img{
         height: 100%;

@@ -1,16 +1,18 @@
 @import url("./variables.css");
-
-
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Monda:wght@400;700&family=Montserrat&family=Play:wght@400;700&display=swap');
 :lang(en) {
-    font-family: 'Monda', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
 :lang(ru){
-    font-family: 'Play', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
 .Michroma:lang(en){
     font-family: 'Michroma', sans-serif;
+}
+*{
+    transition:  all linear 0.5s, font-size linear 0s;
 }
 body{
     margin: 0;

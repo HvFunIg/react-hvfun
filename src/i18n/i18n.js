@@ -11,7 +11,9 @@ import CV_ru from "./ru/CV_ru.json"
 import CV_en from "./en/CV_en.json"
 import main_ru from "./ru/main_ru.json"
 import main_en from "./en/main_en.json"
-/**TODO - Разбить переводы на 2 файла **/
+import about_en from "./en/about_en.json"
+import about_ru from "./ru/about_ru.json"
+
 
 i18n.use (initReactI18next)
     .init({
@@ -22,15 +24,16 @@ i18n.use (initReactI18next)
                 intro:intro_en,
                 projects:projects_en,
                 CV:CV_en,
-                main:main_en
+                main:main_en,
+                about:about_en
             },
             ru:{
                 header:header_ru,
                 intro:intro_ru,
                 projects:projects_ru,
                 CV:CV_ru,
-                main:main_ru
-
+                main:main_ru,
+                about:about_ru
             }
         },
 

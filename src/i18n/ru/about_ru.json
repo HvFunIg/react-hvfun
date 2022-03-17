@@ -1,0 +1,43 @@
+{
+  "header":"О себе",
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. ",
+  "header-facts": "Немного фактов",
+  "facts": [
+    "Играю на гитаре",
+    "Настольщик"
+  ],
+  "JobsArray": [
+    {
+      "type":"Бакалавриат",
+      "stack":[
+        {
+          "period": "2016 - 2020",
+          "place": "МГТУ им. Н.Э.Баумана"
+        }
+      ]
+    },
+    {
+      "type":"Магистратура",
+      "stack":[
+        {
+          "period": "2020 - наст.вр.",
+          "place": "НИУ МЭИ"
+        }
+      ]
+    },
+    {
+      "type":"Работа",
+      "stack": [
+        {
+          "period": "2019 - 2020",
+          "place": "АО \"Ланит \", web-разработчик"
+        },
+        {
+          "place":"Самозанятый",
+          "period": "2021 - наст.вр."
+        }
+      ]
+    }
+  ]
+
+}

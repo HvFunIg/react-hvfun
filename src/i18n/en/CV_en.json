@@ -4,38 +4,5 @@
   "stack-programming": "Programming",
   "stack-cad": "CAD/CAE/CAM",
   "stack-databases": "Databases",
-  "stack-design": "Design",
-  "JobsArray": [
-    {
-      "type":"Bachelor's degree",
-      "stack":[
-        {
-          "period": "2016 - 2020",
-          "place": "Bauman Mоscow State Technical University"
-        }
-      ]
-      },
-    {
-      "type":"Master's degree",
-      "stack":[
-        {
-          "period": "2020 - to present",
-          "place": "Moscow Power Engineering Institute"
-        }
-      ]
-     },
-    {
-      "type": "Jobs",
-      "stack": [
-        {
-          "period": "2019 - 2020",
-          "place": "\"LANIT \", web-developer"
-        },
-        {
-          "place": "Self-employed",
-          "period": "2021 to present"
-        }
-      ]
-    }
-  ]
+  "stack-design": "Design"
 }

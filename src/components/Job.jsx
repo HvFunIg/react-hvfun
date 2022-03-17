@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 const Job = ({period,place}) => {
 
     return(
-        <section className="skill">
-            <div className="job-content-period">{period}</div>
-            <div className="job-content-place">  {place}</div>
+        <section className="job">
+            <div className="job-period">{period}</div>
+            <div className="job-place">  {place}</div>
         </section>
     )
 }
