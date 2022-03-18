@@ -15,13 +15,11 @@ const Catalog = ({header,sortBy}) => {
 
     const onClickCategory = (cat) =>{
         //cat.target.value ? setActive(cat.target.value) : setActive(cat);
-        console.log(cat)
         setActive(cat);
     }
 
     const onClickCategory2 = (es) =>{
         setActive(es.value);
-        console.log(activeCategory);
     }
     const options = sortBy.map((item, index) => (
         {value:index,label:item}

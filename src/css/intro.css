@@ -155,16 +155,18 @@
         flex-grow: 3;
     }
     .intro-bookmark{
-        /*position: absolute;
-        bottom: 0;
-         */
+
         height: auto;
 
         width: 100%;
 
         padding: 10px 0 20px 0;
-        background: linear-gradient(179.46deg, #434242 13.29%, #000000 83.64%);
         align-items: center;
+
+
+        background: linear-gradient(113.2deg, #434242 44.63%, #000000 119.87%);
+        box-shadow: inset 0px 0px 19px 5px rgba(3, 3, 3, 0.25);
+
     }
     .intro-text{
         position: relative;

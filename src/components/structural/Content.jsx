@@ -3,14 +3,11 @@ import {useTranslation} from "react-i18next";
 
 import '../../css/header.css';
 import Intro from "../Intro";
-import IconsLine from "../IconsLine";
 import Catalog from "../Catalog";
-import CatalogItem from "../CatalogItem";
 
 import myPhoto from "../../img/glitch.png"
 import AboutMe from "../AboutMe";
 import CV from "../CV";
-const tempArray = [1,2,3,4,5]
 
 const Content = () => {
 
@@ -27,7 +24,6 @@ const Content = () => {
             <AboutMe/>
             <Catalog header={ t("main:header-projects")} sortBy={sortBy}/>
             <CV header={ t("main:header-CV")}/>
-            <AboutMe/>
 
         </Fragment>
     )

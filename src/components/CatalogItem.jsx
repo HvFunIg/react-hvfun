@@ -16,17 +16,22 @@ const CatalogItem = ({header,text,img,linkTo,typeWord,data}) => {
     return(
         <div className={"catalog-item-content"}>
             <div className="catalog-item--main">
-                <HexImage img={img} className="hex-catalog"/>
+                {(width < 856) ? <p >{text}</p> : ''}
+
+                <img src={img} className="catalog-item--img"/>
                 <div className="catalog-item--text">
                     <h3 className="Michroma light-neon"> {header}</h3>
-                    {(width < 1441 && width > 550) ? <p>{text}</p> : ''}
+                    {(width > 855) ? <p>{text}</p> : ''}
                     <h3 className="Michroma light-neon"> {data}</h3>
                 </div>
 
 
             </div>
             <div className="container-wide catalog-item--footer">
-                <h3 className="Michroma light-neon"> {typeWord}</h3>
+                {(width > 450) ?
+                    <h3 className="Michroma light-neon"> {typeWord}</h3>
+                    : ''}
+
 
                 <Button className={"button-transparent"} text={t("more")}  > </Button>
             </div>

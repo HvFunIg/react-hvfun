@@ -50,6 +50,9 @@ h1{
     z-index: 2;
     margin: 0;
 }
+p,h3{
+    margin: 0;
+}
 button{
 
     border: 1px solid white;
@@ -128,7 +131,7 @@ button:hover{
 }
 .light-neon{
     color: var(--blue-light);
-    text-shadow: 0px 1px 3px #00ECFB;
+    text-shadow: 0px 1px 3px var(--blue-light);
 }
 .strikethrough{
     text-decoration: line-through;
@@ -170,7 +173,5 @@ button:hover{
 }
 
 @media screen and (max-width: 550px){
-    h3{
-        margin:0 4px;
-    }
+
 }
