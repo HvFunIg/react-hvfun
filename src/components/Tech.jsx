@@ -6,8 +6,8 @@ const Tech = ({icon,tech}) => {
 
     return(
         <section className="skill tech">
-                <img className="tech-img" src={icon} alt=""/>
-                <div> {tech}</div>
+            <img className="tech-img" src={icon} alt=""/>
+            <div> {tech}</div>
         </section>
     )
 }

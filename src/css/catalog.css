@@ -155,10 +155,9 @@
 .catalog-item--main{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100%;
     color: white;
-
 }
 
 .catalog-item--text{
@@ -262,6 +261,9 @@
 
 }
 @media screen and (max-width: 550px) {
+    .catalog-items{
+        padding: 40px 10px;
+    }
     .catalog-item{
         margin: 10px 0;
         padding: 0;

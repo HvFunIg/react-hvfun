@@ -87,19 +87,6 @@ export const stack = [
         ]
     },
     {
-        header: "stack-design",
-        stack: [
-            {
-                icon:tech1,
-                tech:"Photoshop",
-            },
-            {
-                icon:tech1,
-                tech:"Figma",
-            }
-        ]
-    },
-    {
         header:"AR",
         stack: [
             {
@@ -117,25 +104,7 @@ export const stack = [
         ]
     },
     {
-        header: "AR",
-        stack: [
-            {
-                icon:tech1,
-                tech:"NX",
-                header:"stack-cad"
-            },
-            {
-                icon:tech1,
-                tech:"Teamcenter",
-            },
-            {
-                icon:tech1,
-                tech:"GPSS",
-            }
-        ]
-    },
-    {
-        header: "AR",
+        header: "stack-databases",
         stack: [
             {
                 icon:tech1,
@@ -152,6 +121,27 @@ export const stack = [
             },
         ]
     },
+
+
+    {
+        header: "stack-cad",
+        stack: [
+            {
+                icon:tech1,
+                tech:"NX",
+                header:"stack-cad"
+            },
+            {
+                icon:tech1,
+                tech:"Teamcenter",
+            },
+            {
+                icon:tech1,
+                tech:"GPSS",
+            }
+        ]
+    },
+
     {
         header:"stack-programming",
         stack: [
@@ -164,6 +154,19 @@ export const stack = [
                 icon:tech1,
                 tech:"С#",
             },
+        ]
+    },
+    {
+        header: "stack-design",
+        stack: [
+            {
+                icon:tech1,
+                tech:"Photoshop",
+            },
+            {
+                icon:tech1,
+                tech:"Figma",
+            }
         ]
     }
 ]

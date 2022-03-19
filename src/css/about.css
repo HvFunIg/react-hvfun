@@ -18,16 +18,28 @@
 
     padding: 20px;
     margin: 10px 20px;
-
 }
 .about-ice:hover{
-    background: linear-gradient(113.2deg, #7b7b7b 44.63%, #a1a1a1 119.87%);
-    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25), inset 0px 0px 19px 5px rgba(3, 3, 3, 0.25);
     color: black;
     background-color: #FFFFFF;
     transition: color 0.2s linear ;
+    background: linear-gradient(195.17deg, #C7C7C7 41.52%, #FFFFFF 132.19%);
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25),inset 0px 0px 6px 5px #B5B5B5;
 }
+.about-ice--alter:hover{
+    color: white;
 
+    background: linear-gradient(113.2deg, #434242 44.63%, #000000 119.87%);
+
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25),inset 0px 0px 6px 5px #000000;
+}
+.about-ice--alter{
+    color: black;
+    background-color: #FFFFFF;
+
+    background: linear-gradient(195.17deg, #C7C7C7 41.52%, #FFFFFF 132.19%);
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25), inset 0px 0px 6px 5px #B5B5B5;
+}
 .about-ice:hover hr{
     border: var(--orange-light) 1px solid;
     box-shadow: 1px 1px 10px 2px var(--orange-light);
@@ -76,7 +88,7 @@
     width: 100%;
     padding: 5px 0;
 }
-.about-ice:nth-child(2n){
+.about-ice:nth-child(2){
     align-self: flex-end;
 }
 .job-period{

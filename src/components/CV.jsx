@@ -4,15 +4,11 @@ import {useTranslation} from "react-i18next";
 import useWindowDimensions from "../js/useWindowDimensions";
 
 import {stack} from "../js/data"
+import '../css/skills.css';
+import Cat from "../img/cat.png"
 
-import FrameLeft from "../img/Fragments/Frame line left.svg"
-import FrameRight from "../img/Fragments/Frame line right.svg"
-import Panel from "./Panel";
-import Stack from "./Stack";
-import Job from "./Job";
 import Tech from "./Tech";
 import Technologies from "./Technologies";
-import Jobs from "./Jobs";
 
 const CV = () => {
     const { t, i18n } = useTranslation('CV'); //t - основная функция для перевода
@@ -20,28 +16,11 @@ const CV = () => {
 
     return(
         <section className="skills">
-            {width > 480 ?
-                <>
-                    <div className="skills-frame skills-frame--left"><img src={FrameLeft} alt=""/></div>
-                    <div className="skills-frame skills-frame--right"><img src={FrameRight} alt=""/></div>
-                </>
-                :''
-            }
-
-            <div className="panels">
-
-                <Panel header={t("education")}>
-
-                </Panel>
-                <Panel header={t("stack")}>
-                    {stack.map((tech, id) =>{
-                        return <Technologies header={t(tech.header)} stack={tech.stack}/>
-                    })}
-                </Panel>
-                <Stack>
-
-                </Stack>
-            </div>
+            <h2 className="skill-base about-ice about-ice--skill">{t("stack")}</h2>
+            {stack.map((tech, id) =>{
+                return <Technologies grid={id} header={t(tech.header)} stack={tech.stack} />
+            })}
+            <Technologies grid={6} header={t("stack-cat")} alter={Cat}/>
         </section>
     )
 }
