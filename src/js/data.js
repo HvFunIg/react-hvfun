@@ -1,4 +1,3 @@
-import tech1 from "../img/icons/html.png"
 
 import img1 from "../img/Projects/Prom/preview.JPG"
 const img2 = "http://via.placeholder.com/640x360"
@@ -51,37 +50,29 @@ export const stack = [
         header:"web",
         stack:[
             {
-                icon:tech1,
                 tech:"HTML",
             },
             {
-                icon:tech1,
                 tech:"CSS",
             },
 
             {
-                icon:tech1,
                 tech:"JS",
             },
             {
-                icon:tech1,
                 tech:"ReactJS",
             },
 
             {
-                icon:tech1,
                 tech:"NodeJS",
             },
             {
-                icon:tech1,
                 tech:"Git/GitHub",
             },
             {
-                icon:tech1,
                 tech:"REST",
             },
             {
-                icon:tech1,
                 tech:"WebSocket"
             }
         ]
@@ -90,15 +81,12 @@ export const stack = [
         header:"AR",
         stack: [
             {
-                icon:tech1,
                 tech:"Vuforia Engine",
             },
             {
-                icon:tech1,
                 tech:"ThingWorx",
             },
             {
-                icon:tech1,
                 tech:"Unity",
             }
         ]
@@ -107,16 +95,12 @@ export const stack = [
         header: "stack-databases",
         stack: [
             {
-                icon:tech1,
                 tech:"MySQL",
-                header:"stack-databases"
             },
             {
-                icon:tech1,
                 tech:"SQL Server",
             },
             {
-                icon:tech1,
                 tech:"Oracle",
             },
         ]
@@ -127,16 +111,12 @@ export const stack = [
         header: "stack-cad",
         stack: [
             {
-                icon:tech1,
                 tech:"NX",
-                header:"stack-cad"
             },
             {
-                icon:tech1,
                 tech:"Teamcenter",
             },
             {
-                icon:tech1,
                 tech:"GPSS",
             }
         ]
@@ -146,12 +126,10 @@ export const stack = [
         header:"stack-programming",
         stack: [
             {
-                icon:tech1,
                 tech:"C++",
 
             },
             {
-                icon:tech1,
                 tech:"С#",
             },
         ]
@@ -160,12 +138,38 @@ export const stack = [
         header: "stack-design",
         stack: [
             {
-                icon:tech1,
                 tech:"Photoshop",
             },
             {
-                icon:tech1,
                 tech:"Figma",
+            }
+        ]
+    }
+]
+export const projects = [
+    {
+        title: "personal",
+        shortDesc: "Website for PromSnabZashita.",
+        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. ",
+        img:img1,
+        stack:[
+            {
+                type:"stack-design",
+                techArray:[
+                    {
+                        name:"Figma",
+                        rate:"5"
+                    }
+                ]
+            },
+            {
+                type:"Frontend",
+                techArray:[
+                    {
+                        name:"ReactJS",
+                        rate:"5"
+                    }
+                ]
             }
         ]
     }

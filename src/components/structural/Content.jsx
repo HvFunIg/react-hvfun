@@ -8,6 +8,8 @@ import Catalog from "../Catalog";
 import myPhoto from "../../img/glitch.png"
 import AboutMe from "../AboutMe";
 import CV from "../CV";
+import Project from "../Project";
+import {projects} from "../../js/data";
 
 const Content = () => {
 
@@ -24,6 +26,11 @@ const Content = () => {
             <AboutMe/>
             <Catalog header={ t("main:header-projects")} sortBy={sortBy}/>
             <CV header={ t("main:header-CV")}/>
+            {projects.map((project,index) =>(
+                <Project key={index} {...project}/>
+                )
+            )
+            }
 
         </Fragment>
     )

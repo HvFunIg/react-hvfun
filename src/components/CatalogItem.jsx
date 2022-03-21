@@ -1,18 +1,24 @@
 import React, {useState} from 'react';
-import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
-import NavLinks from "./NavLinks";
 import {useTranslation} from "react-i18next";
 import Button from "./structural/Button";
-import HexImage from "./structural/HexImage";
 import useWindowDimensions from "../js/useWindowDimensions";
+import Modal from "./structural/Modal";
+import ContactMe from "./ContactMe";
+import Project from "./Project";
 
 
 
 const CatalogItem = ({header,text,img,linkTo,typeWord,data}) => {
     const { t, i18n } = useTranslation('projects'); //t - основная функция для перевода
     const {  width } = useWindowDimensions();
+    const [isModal, setModal] = React.useState(false)
 
+    const onClose = () => setModal(false)
+
+    const handlerContact = (e) =>{
+        alert("Сообщение должно быть отправлено");
+    }
     return(
         <div className={"catalog-item-content"}>
             <div className="catalog-item--main">
@@ -33,7 +39,20 @@ const CatalogItem = ({header,text,img,linkTo,typeWord,data}) => {
                     : ''}
 
 
-                <Button className={"button-transparent"} text={t("more")}  > </Button>
+                <Button className={"button-transparent"}
+                        text={t("more")}
+                        handler={() => setModal(true)}
+                > </Button>
+                <Modal
+                    visible={isModal}
+                    title='header'
+                    content={
+                        <Project/>}
+                    footer={
+                        ''
+                    }
+                    onClose={onClose}
+                />
             </div>
         </div>
 

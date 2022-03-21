@@ -15,6 +15,12 @@
   "project2-text":"Приложение дополненной реальности для отслеживания занятости аудитории в реальном времени",
   "project3-text":"Красивый сайт, на который вы сейчас смотрите",
   "project4-text":"Заказчик перестал выходить на связь",
-
+  "projects":{
+    "personal": {
+      "title": "Личный сайт",
+      "shortDesc":"Красивый сайт, на который вы сейчас смотрите",
+      "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. "
+    }
+  },
   "more":"Подробнее"
 }

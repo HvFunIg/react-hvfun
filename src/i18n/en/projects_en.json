@@ -6,15 +6,23 @@
   "projects-desc0":"Website",
   "projects-desc1":"AR - app",
 
-  "project1-header":"Prom Snab Zashita",
-  "project2-header":"AR Timetable",
-  "project3-header":"Personal website",
-  "project4-header":"Hammer Packaging",
+  "project1-header":"!!Prom Snab Zashita",
+  "project2-header":"!!AR Timetable",
+  "project3-header":"!!Personal website",
+  "project4-header":"!!Hammer Packaging",
 
-  "project1-text":"Website for PromSnabZashita.",
-  "project2-text":"AR application for Android 7.0+. ",
-  "project3-text":"Beautiful Hi-Tech site, isn't it?",
-  "project4-text":"This project is not in use.",
+  "project1-text":"!!Website for PromSnabZashita.",
+  "project2-text":"!!AR application for Android 7.0+. ",
+  "project3-text":"!!Beautiful Hi-Tech site, isn't it?",
+  "project4-text":"!!This project is not in use.",
+
+   "projects":{
+     "personal": {
+       "title": "Personal website",
+       "shortDesc": "Beautiful Hi-Tech site, isn't it?",
+       "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. "
+     }
+   },
 
   "more":"See more"
 }

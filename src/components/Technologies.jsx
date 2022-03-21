@@ -12,7 +12,7 @@ const Technologies = ({header,stack,grid,alter}) => {
             <h3 className={"skill-header " + (alter ? "skill-alter--header" : "")}>{header}</h3>
             {alter ?
                 <img  className="skill-alter--img" src={alter} alt="cat"/> :
-                stack.map((tech) =>  <Tech tech={tech.tech}  icon={tech.icon}/>)
+                stack.map((tech) =>  <Tech tech={tech.tech}  />)
 
             }
         </div>

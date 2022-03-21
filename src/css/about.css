@@ -11,10 +11,10 @@
     width: 30vw;
     min-width: 365px;
     background: linear-gradient(113.2deg, #434242 44.63%, #000000 119.87%);
-
     box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25),inset 0px 0px 6px 5px #000000;
-    border-radius: 22px;
     color: white;
+
+    border-radius: 22px;
 
     padding: 20px;
     margin: 10px 20px;

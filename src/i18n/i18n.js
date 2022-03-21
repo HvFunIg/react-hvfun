@@ -25,7 +25,7 @@ i18n.use (initReactI18next)
                 projects:projects_en,
                 CV:CV_en,
                 main:main_en,
-                about:about_en
+                about:about_en,
             },
             ru:{
                 header:header_ru,
