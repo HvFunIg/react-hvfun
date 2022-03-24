@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types";
 import '../css/about.css';
 import {useTranslation} from "react-i18next";
 import Jobs from "./Jobs";
@@ -26,8 +25,8 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className="about-education">
-                {t("JobsArray", {returnObjects:true}).map((job, id) =>
-                    <Jobs header={t(job.type)} stack={job.stack}/>
+                {t("JobsArray", {returnObjects:true}).map((job, index) =>
+                    <Jobs key={index} header={t(job.type)} stack={job.stack}/>
                 )}
             </div>
         </section>

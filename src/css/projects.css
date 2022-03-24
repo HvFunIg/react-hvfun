@@ -1,7 +1,138 @@
 .project{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+
+    box-sizing: border-box;
+    border-radius: 13px;
+
+    color: white;
+    backdrop-filter: blur(23px);
+    /* Note: backdrop-filter has minimal browser support */
+}
+
+.project-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 350px;
+}
+.project-img{
+    max-width: 40%;
+}
+.project-fragment{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 22px;
+}
+.project-tech-panel{
+     display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    height: auto;
+    min-height: 200px;
+    background: rgba(75, 75, 75, 0.8);
+
+    border: 2px solid #00ECFB;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 14px 5px #00ECFB;
+    backdrop-filter: blur(23px);
+    filter:blur(23);
+    z-index: -1;
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 13px;
+}
+.project-techs{
+    padding: 20px ;
 }
 .project-tech{
     display: flex;
+    justify-content: space-between;
+}
+.project-rate{
+    display: flex;
+    width: 140px;
+}
+.rateBlock{
+    width: 25px;
+    height: 20px;
+    margin: 0 1px;
+    border-radius: 5px;
+    background:transparent;
+    box-shadow: 2px 2px 14px 5px var(--blue-light);
+
+}
+.project-hexes :nth-child(2){
+    transform: rotate(60deg);
+}
+.project-hexes :nth-child(3){
+    transform: rotate(-120deg);
+}
+
+.project-text {
+    width: 80%;
+    justify-self: flex-end;
+    padding: 20px;
+}
+
+@media screen and (max-width: 956px){
+    .project{
+        background: linear-gradient(110.61deg, #434242 47.1%, #000000 125.22%);
+        box-shadow: inset 0px 0px 6px #000000;
+    }
+    .project-info{
+        flex-direction: column;
+    }
+    .project-tech-panel{
+        width: 80%;
+        margin: 20px 0;
+    }
+    .project-img{
+        max-width: 100%;
+    }
+
+}
+@media screen and (max-width: 575px){
+
+    .project-img {
+        max-width: 90%;
+    }
+    .project-tech-panel{
+        width: 90%;
+        margin: 20px 0 10px 0;
+        box-shadow: none;
+    }
+    .project-techs{
+        padding: 20px 5px;
+    }
+    .rateBlock{
+        width: 20px;
+        height: 16px;
+        margin: 0 1px;
+        border-radius: 5px;
+        box-shadow: -3px 0px 14px 1px var(--blue-light);
+
+    }
+    .project-rate{
+        justify-content: flex-end;
+    }
+    .project-hexes{
+        display: flex;
+        justify-content: center;
+    }
+    .project-hexes :nth-child(n){
+        width: 15%;
+    }
+    .project-text{
+        width: 90%;
+        padding: 0 0 10px 0 ;
+    }
 }

@@ -1,26 +1,35 @@
 {
-  "projects-header-type1":"All",
-  "projects-header-type2":"Websites",
-  "projects-header-type3":"AR - apps",
+  "type": [
+    "Website",
+    "AR - app"
+  ],
+  "types": [
+    "Websites",
+    "AR - apps"
+  ],
 
-  "projects-desc0":"Website",
-  "projects-desc1":"AR - app",
-
-  "project1-header":"!!Prom Snab Zashita",
-  "project2-header":"!!AR Timetable",
-  "project3-header":"!!Personal website",
-  "project4-header":"!!Hammer Packaging",
-
-  "project1-text":"!!Website for PromSnabZashita.",
-  "project2-text":"!!AR application for Android 7.0+. ",
-  "project3-text":"!!Beautiful Hi-Tech site, isn't it?",
-  "project4-text":"!!This project is not in use.",
+  "projects-all":"All",
 
    "projects":{
      "personal": {
        "title": "Personal website",
        "shortDesc": "Beautiful Hi-Tech site, isn't it?",
        "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. "
+     },
+     "prom": {
+       "title": "Prom Snab Zashita",
+       "shortDesc":"Website for Promsnabzashita",
+       "longDesc": "Сайт-визитка, был разработан для компании ООО 'Промснабзащита'. Состоит из нескольких страниц. Из особенностей сайта стоит отметить: уникальные иконки, плавный бесконечный слайдер, который всегда в движении.  Сайт не был введен в эксплуатацию по независящим от меня причинам."
+     },
+     "timetable": {
+       "title": "AR Timetable",
+       "shortDesc":"AR application for Android 7.0+.",
+       "longDesc": "Сайт-визитка, был разработан для компании ООО 'Промснабзащита'. Состоит из нескольких страниц. Из особенностей сайта стоит отметить: уникальные иконки, плавный бесконечный слайдер, который всегда в движении.  Сайт не был введен в эксплуатацию по независящим от меня причинам."
+     },
+     "hammer": {
+       "title": "Hammer Packaging",
+       "shortDesc":"This project is not in use.",
+       "longDesc": "Сайт-визитка, был разработан для компании ООО 'Промснабзащита'. Состоит из нескольких страниц. Из особенностей сайта стоит отметить: уникальные иконки, плавный бесконечный слайдер, который всегда в движении.  Сайт не был введен в эксплуатацию по независящим от меня причинам."
      }
    },
 

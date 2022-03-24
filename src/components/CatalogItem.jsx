@@ -1,34 +1,32 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PropTypes from "prop-types";
 import {useTranslation} from "react-i18next";
 import Button from "./structural/Button";
 import useWindowDimensions from "../js/useWindowDimensions";
 import Modal from "./structural/Modal";
-import ContactMe from "./ContactMe";
 import Project from "./Project";
 
 
 
-const CatalogItem = ({header,text,img,linkTo,typeWord,data}) => {
-    const { t, i18n } = useTranslation('projects'); //t - основная функция для перевода
+const CatalogItem = ({title,longDesc,shortDesc,img,images,linkTo,typeWord,date, stack}) => {
+    const {t} = useTranslation('projects'); //t - основная функция для перевода
     const {  width } = useWindowDimensions();
-    const [isModal, setModal] = React.useState(false)
 
+    const [isModal, setModal] = React.useState(false)
     const onClose = () => setModal(false)
 
-    const handlerContact = (e) =>{
-        alert("Сообщение должно быть отправлено");
-    }
+
     return(
         <div className={"catalog-item-content"}>
-            <div className="catalog-item--main">
-                {(width < 856) ? <p >{text}</p> : ''}
 
-                <img src={img} className="catalog-item--img"/>
+            <div className="catalog-item--main">
+                {(width < 856) ? <p >{shortDesc}</p> : ''}
+
+                <img alt={title} src={img} className="catalog-item--img"/>
                 <div className="catalog-item--text">
-                    <h3 className="Michroma light-neon"> {header}</h3>
-                    {(width > 855) ? <p>{text}</p> : ''}
-                    <h3 className="Michroma light-neon"> {data}</h3>
+                    <h3 className="Michroma light-neon"> {title}</h3>
+                    {(width > 855) ? <p>{shortDesc}</p> : ''}
+                    <h3 className="Michroma light-neon"> {date}</h3>
                 </div>
 
 
@@ -37,17 +35,14 @@ const CatalogItem = ({header,text,img,linkTo,typeWord,data}) => {
                 {(width > 450) ?
                     <h3 className="Michroma light-neon"> {typeWord}</h3>
                     : ''}
-
-
                 <Button className={"button-transparent"}
                         text={t("more")}
-                        handler={() => setModal(true)}
-                > </Button>
+                        handler={() => setModal(true)}> </Button>
                 <Modal
                     visible={isModal}
-                    title='header'
+                    title={title}
                     content={
-                        <Project/>}
+                        <Project title={title} img={images} stack={stack} longDesc={longDesc}/>}
                     footer={
                         ''
                     }
@@ -61,17 +56,20 @@ const CatalogItem = ({header,text,img,linkTo,typeWord,data}) => {
 
 }
 CatalogItem.propTypes = {
-    img: PropTypes.arrayOf(PropTypes.string),
-    header: PropTypes.string.isRequired,
-    text: PropTypes.string,
-    linkTo: PropTypes.string.isRequired,
-    className: PropTypes.string,
     typeWord: PropTypes.string,
-    data: PropTypes.number
+    date: PropTypes.number,
+    title:PropTypes.string,
+    longDesc:PropTypes.string,
+    shortDesc:PropTypes.string,
+    img:PropTypes.string,
+    images:PropTypes.string,
+    linkTo:PropTypes.string,
+    stack:PropTypes.arrayOf(PropTypes.object),
 };
 CatalogItem.defaultProps = {
     linksTo: ["#"],
     header:"Header",
-    typeWord:"No type"
+    typeWord:"No type",
+    stack:[]
 };
 export default CatalogItem;

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 
 import '../css/catalog.css';
 import useWindowDimensions from "../js/useWindowDimensions";
@@ -7,11 +7,13 @@ import {useTranslation} from "react-i18next";
 
 import {catalogItems} from '../js/data'
 import CatalogItem from "./CatalogItem";
+import Button from "./structural/Button";
+import Modal from "./structural/Modal";
 
 const Catalog = ({header,sortBy}) => {
     const [activeCategory,setActive ] = useState("all");
     const {  width } = useWindowDimensions();
-    const { t, i18n } = useTranslation('projects'); //t - основная функция для перевода
+    const { t } = useTranslation('projects'); //t - основная функция для перевода
 
     const onClickCategory = (cat) =>{
         //cat.target.value ? setActive(cat.target.value) : setActive(cat);
@@ -21,18 +23,20 @@ const Catalog = ({header,sortBy}) => {
     const onClickCategory2 = (es) =>{
         setActive(es.value);
     }
+    const [isModal, setModal] = React.useState(false)
+    const onClose = () => setModal(false)
     const options = sortBy.map((item, index) => (
         {value:index,label:item}
     ));
     //Метод unshift вставляет переданные значения в начало массивоподобного объекта
-    options.unshift({value:"all",label:t("projects-header-type1")})
+    options.unshift({value:"all",label:t("projects-all")})
     const sort = width > 1024 ?
         <div className="sort-main">
             <ul>
                 <li
                     className={activeCategory === "all" ? "sort sort-active" : "sort"}
                     onClick={() => onClickCategory("all")}>
-                    {t("projects-header-type1")}
+                    {t("projects-all")}
                 </li>
                 {sortBy &&
                 sortBy.map((item, index) => (
@@ -54,22 +58,22 @@ const Catalog = ({header,sortBy}) => {
         <section className="container-vertical catalog">
             <div className="catalog-fragment catalog-fragment--1"/>
 
-            <h1 className="Michroma">{header}</h1>
+            <h1  className={"Michroma " + (width<550?"light-neon":"")}>{header}</h1>
             {sort}
             <div className={"catalog-items " + (activeCategory === "all" ? '' : " catalog-flex")} >
                 {activeCategory === "all" ?
                     catalogItems.map((item,index) =>
-                        <div className={"catalog-item"}>
+                        <div className={"catalog-item"} key={"cat-item"+index}>
+
                             <CatalogItem
                                 key = {index}
-                                img={item.img}
-                                typeWord={t(`${item.desc}`)}
-                                header={t(`${item.header}`)}
-                                text={t(`${item.text}`)}
-                                linkTo={item.linkTo}
-                                type={item.type}
-                                data={item.data}
+                                {...item}
+                                typeWord={t(`type.${item.type}`)}
+                                title={t(`projects.${item.header}.title`)}
+                                longDesc={t(`projects.${item.header}.longDesc`)}
+                                shortDesc={t(`projects.${item.header}.shortDesc`)}
                             />
+
                         </div>
                         )
                     :
@@ -78,13 +82,11 @@ const Catalog = ({header,sortBy}) => {
                             <div className={"catalog-item"}>
                                 <CatalogItem
                                     key = {index}
-                                    img={item.img}
+                                    {...item}
                                     typeWord={t(sortBy[item.type])}
-                                    header={t(`${item.header}`)}
-                                    text={t(`${item.text}`)}
-                                    linkTo={item.linkTo}
-                                    type={item.type}
-                                    data={item.data}
+                                    title={t(`projects.${item.header}.title`)}
+                                    longDesc={t(`projects.${item.header}.longDesc`)}
+                                    shortDesc={t(`projects.${item.header}.shortDesc`)}
                                 />
                             </div>
                             : "")

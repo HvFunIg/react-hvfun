@@ -4,7 +4,6 @@ import '../css/intro.css';
 import PropTypes from "prop-types";
 import {useTranslation} from "react-i18next";
 
-import hexes from "../img/Hexes.png"
 import Button from "./structural/Button";
 import useWindowDimensions from "../js/useWindowDimensions";
 import Social from "./Social";
@@ -12,17 +11,17 @@ import Social from "./Social";
 import Bookmark from "../img/Fragments/Rect_Intro.svg"
 const Intro = ({img}) => {
     const { t, i18n } = useTranslation('intro'); //t - основная функция для перевода
-    const { height, width } = useWindowDimensions();
+    const {width } = useWindowDimensions();
 
     return(
         <section className="intro" >
-                <img src={img} alt="My photo" className="intro-img"/>
-
+                <img src={img} alt="Igor" className="intro-img"/>
+            { width > 850 ?
+                <img className="intro-svg" src={Bookmark} alt={"About me"}/>
+                : ''}
 
             <div className="intro-bookmark">
-                { width > 850 ?
-                    <img className="intro-svg" src={Bookmark} alt={"About me"}/>
-                : ''}
+
                     <div className="intro-text">
                     <h1> {t("hello")}</h1>
                     <p className="strikethrough light-neon">{t("strikethrough1")} </p>

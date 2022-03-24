@@ -1,6 +1,5 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import i18next from "i18next";
 import  header_ru  from "./ru/header_ru.json";
 import  header_en  from "./en/header_en.json";
 import  intro_en  from "./en/intro_en.json";

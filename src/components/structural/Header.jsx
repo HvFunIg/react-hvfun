@@ -8,26 +8,18 @@ import '../../css/burger.css';
 
 import NavLinks from "../NavLinks";
 import {Link} from "react-router-dom";
-import Button from "./Button";
 import Profile from "../Profile";
 import LangChanger from "../LangChanger";
 
 /**  Бургер из модуля react-burger-menu **/
 
 
-const linksTo = ["link1","link2"];
+const linksTo = ["link1","link2","link2"];
 const Header = () => {
-    const { height, width } = useWindowDimensions();
-    const { t, i18n } = useTranslation("header"); //t - основная функция для перевода
+    const {  width } = useWindowDimensions();
+    const { t } = useTranslation("header"); //t - основная функция для перевода
     const links = [t("link_about",),t("link_works"),t("link_contact")];
 
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng)
-
-        // Для корректной замены шрифтов
-        let html = document.querySelector('html');
-        html.setAttribute("lang",lng)
-    };
 
     if (width > 1024)
         return(

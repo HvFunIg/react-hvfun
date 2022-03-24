@@ -33,9 +33,9 @@ const Modal = ({
     return (
         <div className='modal' onClick={onClose}>
             <div className='modal-dialog' onClick={e => e.stopPropagation()}>
-                <div className='modal-header '>
+                <div className='modal-header light-neon'>
                     <h3 className='modal-title'>{title}</h3>
-                    <span className='modal-close' onClick={onClose}>
+                    <span className='modal-close light-neon' onClick={onClose}>
             &times;
           </span>
                 </div>

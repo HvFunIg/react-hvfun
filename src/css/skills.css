@@ -1,10 +1,10 @@
 .skills{
     margin: 50px 20px 70px 20px;
     display: grid;
-    grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+    grid-template-columns: 0.5fr repeat(3, 300px) 0.5fr;
     grid-gap: 15px;
-    grid-auto-rows: 75px;
-
+    grid-auto-rows: 35px ;
+    /*grid-tempate-rows:  0.5fr repeat(3, 300px) 0.5fr;*/
 }
 .skill-block{
     display: flex;
@@ -19,24 +19,25 @@
 .about-ice--skill{
     border-radius: 10px;
     margin:0;
-    padding: 0;
+    padding: 10px 0;
     align-self: auto !important;
     justify-content: space-around;
     min-width: auto;
     width: 100%;
-
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25),inset 0px 0px 3px 1px #979797;
 }
 .tech{
-    padding: 0 20px;
-}
-
-.tech:before {
-    content: '';
+    width: 85%;
     position: relative;
-    height: 50%;
-    left: -10px;
 
-    border: var(--orange-light) 2px solid;
+}
+.tech:before {
+    position: absolute;
+    content: '';
+    height: 90%;
+    left: -10px;
+    background-color: var(--orange-light);
+    border: var(--orange-light) 1px solid;
     box-shadow: 1px 1px 10px 1px var(--orange-light);
     border-radius: 2px;
     transition: all 1s;
@@ -45,10 +46,12 @@
 .skill-base{
     grid-column: 3;
     grid-row: 1 / 2;
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25),inset 0px 0px 3px 1px black;
+
 }
 .skill-0{
     grid-column: 2;
-    grid-row: 1 / 6
+    grid-row: 1 / 8
 }
 .skill-1{
     grid-column: 3;
@@ -60,30 +63,29 @@
 }
 .skill-3{
     grid-column: 4;
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
 }
 .skill-4{
     grid-column: 4;
-    grid-row: 3 / 5;
+    grid-row: 4 / 6;
 }
 .skill-5{
-    grid-column: 2;
-    grid-row: 6 / 8;
+    grid-column: 2 / 4;
+    grid-row: 8 / 10;
 }
 .skill-6{
     grid-column: 4;
-    grid-row: 5 / 8;
+    grid-row: 6 / 10;
 }
 .skill-alter--header{
     position: relative;
-
     top:20px
 }
 .skill-alter--img{
     position: relative;
     max-width: 100%;
-    height: 200px;
-    bottom: -60px;
+    height: 150px;
+    bottom: -50px;
     fill: #FFFFFF;
 }
 .skill{
@@ -107,6 +109,7 @@
     position: absolute;
     width: 100%;
     bottom: -2px;
+    background-color: var(--orange-light);
     border: var(--orange-light) 1px solid;
     box-shadow: 1px 1px 10px 2px var(--orange-light);
     border-radius: 2px;
@@ -116,21 +119,14 @@
     height: 35px;
     padding-left: 30px;
 }
-.about-ice--skill:hover .tech:before{
-    border: var(--blue-light) 2px solid;
-    box-shadow: 1px 1px 10px 2px var(--blue-light);
-}
-.about-ice--skill:hover .skill-header:before{
+.about-ice--skill:hover .tech:before, .about-ice--skill:hover .skill-header:before {
+    background-color: var(--blue-light);
     border: var(--blue-light) 1px solid;
     box-shadow: 1px 1px 10px 2px var(--blue-light);
 }
 
-@media screen and (max-width: 1400px){
-    .skills{
-        grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
-    }
 
-}
+
 
 
 @media screen and (max-width: 1100px){
@@ -226,9 +222,8 @@
 @media screen and (max-width: 600px){
     .skills{
         grid-gap: 10px;
-        grid-template-columns: 1fr;
-        margin: 50px 10px 70px 10px;
-
+        grid-template-columns: 80%;
+        margin: 50px 0 70px 0 ;
     }
     .skill-base{
         grid-column: 1;

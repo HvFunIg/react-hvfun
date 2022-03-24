@@ -1,46 +1,97 @@
 
 import img1 from "../img/Projects/Prom/preview.JPG"
+import PromMockup from "../img/Projects/Prom/Mockups.png"
 const img2 = "http://via.placeholder.com/640x360"
 const img3 = "http://via.placeholder.com/640x360"
 const img4 = "http://via.placeholder.com/640x360"
-const img5 = "http://via.placeholder.com/640x360"
 
 
 export const catalogItems = [
     {
-        header:"project1-header",
+        header:"prom",
         img:img1,
-        text:"project1-text",
-        desc:"projects-desc0",
+        images:PromMockup,
         linkTo:"link1",
-        data:2021,
-        type: [0]
+        date:2021,
+        type: [0],
+        stack:[
+            {
+                type:"stack-design",
+                techArray:[
+                    {
+                        name:"Figma",
+                        rate:"5",
+                        main:"#FF551F",
+                        secondary:"#7f1f97"
+                    },{
+                        name:"Figma",
+                        rate:"5",
+                        main:"#FF551F",
+                        secondary:"#7f1f97"
+                    },{
+                        name:"Figma",
+                        rate:"5",
+                        main:"#FF551F",
+                        secondary:"#7f1f97"
+                    },{
+                        name:"Figma",
+                        rate:"5",
+                        main:"#FF551F",
+                        secondary:"#7f1f97"
+                    },
+                    {
+                        name:"Photoshop",
+                        rate:"1",
+                        main:"#00144e",
+                        secondary:"#00c4ff"
+                    }
+                ]
+            },
+            {
+                type:"Frontend",
+                techArray:[
+                    {
+                        name:"HTML",
+                        rate:"3",
+                        main:"#b63e04",
+                        secondary:"#ffffff"
+                    },
+                    {
+                        name:"JS",
+                        rate:"3",
+                        main:"#d0ae34",
+                        secondary:"#ffffff"
+                    },
+                    {
+                        name:"ReactJS",
+                        rate:"5",
+                        main:"#757575",
+                        secondary:"#0BDDEB"
+                    },
+
+                ]
+            }
+        ]
     },
     {
-        header:"project2-header",
+        header:"timetable",
         img:img2,
-        text:"project2-text",
-        desc: "projects-desc1",
         linkTo:"link2",
-        data:2022,
+        date:2022,
         type:[1]
     },
     {
-        header:"project3-header",
+        header:"personal",
         img:img3,
-        text:"project3-text",
-        desc: "projects-desc0",
         linkTo:"link3",
-        data:2022,
+        date:2022,
         type:[0]
     },
     {
-        header:"project4-header",
+        header:"hammer",
         img:img4,
-        text:"project4-text",
-        desc: "projects-desc0",
         linkTo:"link4",
-        data:2020,
+        date:2020,
         type:[0]
     }
 ]
@@ -49,32 +100,15 @@ export const stack = [
     {
         header:"web",
         stack:[
-            {
-                tech:"HTML",
-            },
-            {
-                tech:"CSS",
-            },
-
-            {
-                tech:"JS",
-            },
-            {
-                tech:"ReactJS",
-            },
-
-            {
-                tech:"NodeJS",
-            },
-            {
-                tech:"Git/GitHub",
-            },
-            {
-                tech:"REST",
-            },
-            {
-                tech:"WebSocket"
-            }
+            {tech:"HTML"},
+            {tech:"CSS"},
+            {tech:"LESS"},
+            {tech:"JS"},
+            {tech:"ReactJS"},
+            {tech:"NodeJS"},
+            {tech:"Git/GitHub"},
+            {tech:"REST"},
+            {tech:"WebSocket"}
         ]
     },
     {
@@ -149,16 +183,23 @@ export const stack = [
 export const projects = [
     {
         title: "personal",
-        shortDesc: "Website for PromSnabZashita.",
-        longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. ",
-        img:img1,
+
+        img:PromMockup,
         stack:[
             {
                 type:"stack-design",
                 techArray:[
                     {
                         name:"Figma",
-                        rate:"5"
+                        rate:"5",
+                        main:"#FF551F",
+                        secondary:"#7f1f97"
+                    },
+                    {
+                        name:"Photoshop",
+                        rate:"1",
+                        main:"#00144e",
+                        secondary:"#00c4ff"
                     }
                 ]
             },
@@ -166,9 +207,24 @@ export const projects = [
                 type:"Frontend",
                 techArray:[
                     {
+                        name:"HTML",
+                        rate:"3",
+                        main:"#b63e04",
+                        secondary:"#ffffff"
+                    },
+                    {
+                        name:"JS",
+                        rate:"3",
+                        main:"#d0ae34",
+                        secondary:"#ffffff"
+                    },
+                    {
                         name:"ReactJS",
-                        rate:"5"
-                    }
+                        rate:"5",
+                        main:"#757575",
+                        secondary:"#0BDDEB"
+                    },
+
                 ]
             }
         ]

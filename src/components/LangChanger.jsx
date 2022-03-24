@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 const LangChanger = () => {
     //Переключатель между русским и английским
-    const { t, i18n } = useTranslation("header"); //t - основная функция для перевода
+    const {i18n } = useTranslation("header"); //t - основная функция для перевода
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng)

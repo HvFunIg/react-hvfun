@@ -127,7 +127,6 @@
 }
 .catalog-item:hover{
     box-shadow: var(--orange-light) 1px 1px 20px 2px;
-    filter: drop-shadow(6px 4px 11px rgba(251, 117, 0, 0.31));
 }
 .catalog-item:hover h3{
     color: var(--orange-light);
@@ -184,7 +183,7 @@
     background: linear-gradient(96.21deg, #000000 -34.44%, rgba(0, 0, 0, 0) 189.01%);
 }
 
-.catalog-item--footer h1 {
+.catalog-item--footer h3 {
     margin-left: 10px;
 }
 .catalog-item--img{
@@ -277,4 +276,8 @@
         max-width: 100%;
         height: auto;
     }
+    .catalog-fragment--1 {
+        border-top: 0px ;
+    }
+
 }
