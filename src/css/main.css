@@ -25,6 +25,7 @@ section{
     justify-content: center;
     box-sizing: border-box;
     /*height: 100vh;*/
+    padding-top:100px;
 }
 address{
     display: flex;

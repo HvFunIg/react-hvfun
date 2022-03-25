@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
-import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
+
 import PropTypes from "prop-types";
 import '../css/header.css';
 
@@ -8,7 +9,7 @@ const NavLinks = ({links,linksTo}) => {
         <Fragment>
             <nav className="container ">
                 {links.map((link,index) =>
-                    <Link to={linksTo[index]} className="navLink" key={index}> {link}</Link>)}
+                    <HashLink to={linksTo[index]} className="navLink" key={index}> {link}</HashLink>)}
             </nav>
 
         </Fragment>

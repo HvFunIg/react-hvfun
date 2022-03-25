@@ -1,10 +1,11 @@
 import React from 'react';
 import { stack as Menu } from 'react-burger-menu'
 import { useTranslation } from 'react-i18next';
-
+import {HashLink} from "react-router-hash-link";
 import useWindowDimensions from '../../js/useWindowDimensions';
 import '../../css/header.css';
 import '../../css/burger.css';
+
 
 import NavLinks from "../NavLinks";
 import {Link} from "react-router-dom";
@@ -14,7 +15,7 @@ import LangChanger from "../LangChanger";
 /**  Бургер из модуля react-burger-menu **/
 
 
-const linksTo = ["link1","link2","link2"];
+const linksTo = ["/#aboutme","/#portfolio","/#"];
 const Header = () => {
     const {  width } = useWindowDimensions();
     const { t } = useTranslation("header"); //t - основная функция для перевода
@@ -32,9 +33,9 @@ const Header = () => {
     else
         return(
             <header>
-                <Menu right>
+                <Menu right >
                     {links.map((link,index) =>
-                        <Link to={linksTo[index]} className="menu-item" key={index}> {link}</Link>)}
+                        <HashLink smooth to={linksTo[index]}  className="menu-item" key={index}> {link}</HashLink>)}
                 </Menu>
             <LangChanger />
 

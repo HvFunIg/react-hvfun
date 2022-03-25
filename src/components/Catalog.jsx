@@ -55,9 +55,9 @@ const Catalog = ({header,sortBy}) => {
 
     return(
 
-        <section className="container-vertical catalog">
-            <div className="catalog-fragment catalog-fragment--1"/>
-
+        <section className="container-vertical catalog" >
+            <div className="catalog-fragment catalog-fragment--1" id="portfolio" name="portfolio"/>
+            <a id="portfolio" name="portfolio"></a>
             <h1  className={"Michroma " + (width<550?"light-neon":"")}>{header}</h1>
             {sort}
             <div className={"catalog-items " + (activeCategory === "all" ? '' : " catalog-flex")} >

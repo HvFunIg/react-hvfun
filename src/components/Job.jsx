@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 const Job = ({period,place}) => {
 
     return(
-        <section className="job">
+        <div className="job">
             <div className="job-period">{period}</div>
             <div className="job-place">  {place}</div>
-        </section>
+        </div>
     )
 }
 Job.propTypes = {

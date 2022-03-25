@@ -7,7 +7,7 @@ const AboutMe = () => {
     const {t} = useTranslation('about'); //t - основная функция для перевода
 
     return(
-        <section className="aboutBlock">
+        <section className="aboutBlock" id="aboutme">
             <div className="about-ice">
                 <h2>{t("header")}</h2>
                 <div className="about-content">
