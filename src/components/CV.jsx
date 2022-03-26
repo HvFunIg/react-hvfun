@@ -12,7 +12,7 @@ const CV = () => {
 
     return(
         <section className="skills">
-            <h2 className="skill-base about-ice about-ice--skill">{t("stack")}</h2>
+            <h2 className="skill-base about-ice about-ice--alter about-ice--skill">{t("stack")}</h2>
             {stack.map((tech, id) =>{
                 return <Technologies key={id} grid={id} header={t(tech.header)} stack={tech.stack} />
             })}

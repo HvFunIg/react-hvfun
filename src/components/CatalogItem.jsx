@@ -24,9 +24,9 @@ const CatalogItem = ({title,longDesc,shortDesc,img,images,linkTo,typeWord,date, 
 
                 <img alt={title} src={img} className="catalog-item--img"/>
                 <div className="catalog-item--text">
-                    <h3 className="Michroma light-neon"> {title}</h3>
+                    <h3 className="Michroma catalog-item--header"> {title}</h3>
                     {(width > 855) ? <p>{shortDesc}</p> : ''}
-                    <h3 className="Michroma light-neon"> {date}</h3>
+                    <h3 className="Michroma catalog-item--header"> {date}</h3>
                 </div>
 
 

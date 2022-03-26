@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Technologies = ({header,stack,grid,alter}) => {
 
     return(
-        <div key={header} className={`about-ice about-ice--alter about-ice--skill skill-${grid}`}>
+        <div key={header} className={`about-ice  about-ice--skill skill-${grid}`}>
             <h3 className={"skill-header " + (alter ? "skill-alter--header" : "")}>{header}</h3>
             {alter ?
                 <img  className="skill-alter--img" src={alter} alt="cat"/> :

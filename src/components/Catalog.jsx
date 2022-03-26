@@ -55,46 +55,46 @@ const Catalog = ({header,sortBy}) => {
 
     return(
 
-        <section className="container-vertical catalog" >
-            <div className="catalog-fragment catalog-fragment--1" id="portfolio" name="portfolio"/>
-            <a id="portfolio" name="portfolio"></a>
-            <h1  className={"Michroma " + (width<550?"light-neon":"")}>{header}</h1>
-            {sort}
-            <div className={"catalog-items " + (activeCategory === "all" ? '' : " catalog-flex")} >
-                {activeCategory === "all" ?
-                    catalogItems.map((item,index) =>
-                        <div className={"catalog-item"} key={"cat-item"+index}>
+        <section className="container-vertical " id="portfolio" name="portfolio">
+            <div className="catalog">
+                <a id="portfolio" name="portfolio"></a>
+                <h1  className={"Michroma " + "catalog-header"}>{header}</h1>
+                {sort}
+                <div className={"catalog-items " + (activeCategory === "all" ? '' : " catalog-flex")} >
+                    {activeCategory === "all" ?
+                        catalogItems.map((item,index) =>
+                            <div className={"catalog-item"} key={"cat-item"+index}>
 
-                            <CatalogItem
-                                key = {index}
-                                {...item}
-                                typeWord={t(`type.${item.type}`)}
-                                title={t(`projects.${item.header}.title`)}
-                                longDesc={t(`projects.${item.header}.longDesc`)}
-                                shortDesc={t(`projects.${item.header}.shortDesc`)}
-                            />
-
-                        </div>
-                        )
-                    :
-                    catalogItems.map((item,index) =>{
-                        return ( item.type.some((type)=> type === activeCategory) ?
-                            <div className={"catalog-item"}>
                                 <CatalogItem
                                     key = {index}
                                     {...item}
-                                    typeWord={t(sortBy[item.type])}
+                                    typeWord={t(`type.${item.type}`)}
                                     title={t(`projects.${item.header}.title`)}
                                     longDesc={t(`projects.${item.header}.longDesc`)}
                                     shortDesc={t(`projects.${item.header}.shortDesc`)}
                                 />
+
                             </div>
-                            : "")
-                    })
-                }
+                        )
+                        :
+                        catalogItems.map((item,index) =>{
+                            return ( item.type.some((type)=> type === activeCategory) ?
+                                <div className={"catalog-item"}>
+                                    <CatalogItem
+                                        key = {index}
+                                        {...item}
+                                        typeWord={t(sortBy[item.type])}
+                                        title={t(`projects.${item.header}.title`)}
+                                        longDesc={t(`projects.${item.header}.longDesc`)}
+                                        shortDesc={t(`projects.${item.header}.shortDesc`)}
+                                    />
+                                </div>
+                                : "")
+                        })
+                    }
+                </div>
             </div>
-            <div className="catalog-fragment catalog-fragment--2"/>
-            <div className="catalog-fragment catalog-fragment--3"/>
+
 
         </section>
     )
