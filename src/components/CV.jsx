@@ -3,8 +3,7 @@ import {useTranslation} from "react-i18next";
 
 import {stack} from "../js/data"
 import '../css/skills.css';
-import Cat from "../img/cat.png"
-
+import { ReactComponent as Cat } from "../img/cat.svg";
 import Technologies from "./Technologies";
 
 const CV = () => {
@@ -16,7 +15,7 @@ const CV = () => {
             {stack.map((tech, id) =>{
                 return <Technologies key={id} grid={id} header={t(tech.header)} stack={tech.stack} />
             })}
-            <Technologies grid={6} header={t("stack-cat")} alter={Cat}/>
+            <Technologies grid={6} header={t("stack-cat")} alter={<Cat/>}/>
         </section>
     )
 }

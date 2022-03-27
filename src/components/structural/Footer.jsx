@@ -1,28 +1,16 @@
 import React from 'react';
 
 import '../../css/footer.css';
+import Social from "../Social";
 const Footer = () => {
     return(
         <footer>
-            <div className="container-wide">
-                <address className="left">
-                    <h2>Тел/факс</h2>
-                    <h1>Офис</h1>
-                    <p>88888</p>
-                </address>
-                <address className="right">
-                    <h2>Тел/факс</h2>
-                    <h1>Офис</h1>
-                    <p>88888</p>
-                </address>
-
+            <Social mod={"footer"}/>
+            <div className="copyright">
+                <hr/>
+                &copy; 2022 - Developed by
+                <b> Zykov Igor</b>
             </div>
-
-        <div className="copyright">
-            <hr/>
-            Дизайн и создание сайта :
-            <b> Zykov Igor</b>
-        </div>
         </footer>
     )
 

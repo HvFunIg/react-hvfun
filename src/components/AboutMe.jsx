@@ -35,7 +35,5 @@ const AboutMe = () => {
 AboutMe.propTypes = {
 
 };
-AboutMe.defaultProps = {
 
-};
 export default AboutMe;
