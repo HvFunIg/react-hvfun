@@ -8,8 +8,6 @@ import projects_en from "./en/projects_en.json"
 import projects_ru from "./ru/projects_ru.json"
 import CV_ru from "./ru/CV_ru.json"
 import CV_en from "./en/CV_en.json"
-import main_ru from "./ru/main_ru.json"
-import main_en from "./en/main_en.json"
 import about_en from "./en/about_en.json"
 import about_ru from "./ru/about_ru.json"
 

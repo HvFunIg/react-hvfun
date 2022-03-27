@@ -82,7 +82,30 @@
     justify-self: flex-end;
     padding: 20px;
 }
+.project-footer{
+    display: flex;
+}
+.project-footer a{
 
+    border: 1px solid var(--blue-light);
+    box-sizing: border-box;
+    border-radius: 7px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 2rem;
+
+    background-color: transparent;
+    color: var(--blue-light);
+
+    text-decoration: none;
+}
+.project-footer a:hover{
+    color: white;
+    border: 1px solid white;
+
+}
 @media screen and (max-width: 956px){
     .project{
         background: linear-gradient(110.61deg, #434242 47.1%, #000000 125.22%);

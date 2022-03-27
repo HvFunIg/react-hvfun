@@ -10,6 +10,8 @@
   ],
   "projects-header":"Портфолио",
   "projects-all":"Все",
+  "project-footer":"Перейти к проекту ",
+
   "projects":{
     "personal": {
       "title": "Личный сайт",

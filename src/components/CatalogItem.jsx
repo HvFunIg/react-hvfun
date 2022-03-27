@@ -26,7 +26,7 @@ const CatalogItem = ({title,longDesc,shortDesc,img,images,linkTo,typeWord,date, 
                 <div className="catalog-item--text">
                     <h3 className="Michroma catalog-item--header"> {title}</h3>
                     {(width > 855) ? <p>{shortDesc}</p> : ''}
-                    <h3 className="Michroma catalog-item--header"> {date}</h3>
+                    <time className="Michroma catalog-item--header"> {date}</time>
                 </div>
 
 
@@ -44,7 +44,11 @@ const CatalogItem = ({title,longDesc,shortDesc,img,images,linkTo,typeWord,date, 
                     content={
                         <Project title={title} img={images} stack={stack} longDesc={longDesc}/>}
                     footer={
-                        ''
+                        linkTo ?
+                        <div className="project-footer">
+                            <a className="button-transparent" href={linkTo}> {t("project-footer")}</a>
+                        </div>
+                            :null
                     }
                     onClose={onClose}
                 />

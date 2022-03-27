@@ -11,7 +11,7 @@ export const catalogItems = [
         header:"prom",
         img:img1,
         images:PromMockup,
-        linkTo:"link1",
+        linkTo:"https://priceless-agnesi-345083.netlify.app",
         date:2021,
         type: [0],
         stack:[

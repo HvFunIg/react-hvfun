@@ -49,9 +49,9 @@ const Project = ({title,stack,img,longDesc,link}) => {
                     <img src={hex} alt=""/>
                     <img src={hex} alt=""/>
                 </div>
-                <p className="project-text">
+                <article className="project-text">
                     {longDesc}
-                </p>
+                </article>
             </div>
         </>
     )

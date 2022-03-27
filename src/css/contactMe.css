@@ -35,15 +35,15 @@
 
     box-shadow: 1px 1px 10px 0px var(--blue-light);
     text-shadow: 0px 1px 3px var(--blue-light);
+    outline: none;
 }
 .contact-line--input:hover{
 
-    border-color:  var(--orange-light);
-    box-shadow: 1px 1px 10px 0px var(--orange-light);
-    text-shadow: 0px 1px 3px var(--orange-light);
+    border-color:  white;
+    box-shadow: 1px 1px 10px 0px white;
+    text-shadow: 0px 1px 3px white;
 }
 .contact-line--input:focus-visible{
-    border: 2px solid red;
     border-color:  var(--orange-light);
     box-shadow: 1px 1px 10px 0px var(--orange-light);
     text-shadow: 0px 1px 3px var(--orange-light);
@@ -69,7 +69,10 @@
     text-transform: uppercase;
     color: white;
 
-    transition-duration: 0.3s;
+}
+.contact-button:hover{
+    color: var(--orange-light);
+    border: 1px solid var(--orange-light);
 }
 @media screen and (max-width: 650px){
     .contact-line{
@@ -81,4 +84,18 @@
         margin: 10px 20px;
     }
 
+}
+@media screen and (max-width: 420px) {
+    .contactForm{
+        padding: 10px 0;
+    }
+    .contact-line{
+        margin: 0;
+    }
+    .contact-line label{
+        width: auto;
+    }
+    .contact-button{
+        margin: 5px;
+    }
 }
