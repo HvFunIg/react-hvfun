@@ -16,7 +16,7 @@ const AboutMe = () => {
                         {t("bio")}
                     </p>
                 </div>
-                <div >
+                <div className="about-factsBlock">
                     <h3>{t("header-facts")}</h3>
                     <hr/>
                     <ul className="about-facts">
@@ -32,8 +32,6 @@ const AboutMe = () => {
         </section>
     )
 }
-AboutMe.propTypes = {
 
-};
 
 export default AboutMe;

@@ -46,7 +46,7 @@
 .skill-base{
     grid-column: 3;
     grid-row: 1 / 2;
-    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25),inset 0px 0px 3px 1px black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25), inset 0px 0px 1px 1px black;
 
 }
 .skill-0{
@@ -81,10 +81,10 @@
     position: relative;
     top:20px
 }
-.skill-alter-imgBox{
+.skill-alter--imgBox{
     position: relative;
     max-width: 100%;
-    bottom: -50px;
+    bottom: -40px;
 }
 .about-ice--skill:hover .skill-alter--img{
     stroke: var(--orange-light);
@@ -189,7 +189,7 @@
         grid-column: 2;
         grid-row: 11 / 13;
     }
-    .skill-alter-imgBox{
+    .skill-alter--imgBox{
         position: relative;
         max-width: 100%;
         bottom: -20px;
@@ -275,9 +275,12 @@
         grid-column: 1;
         grid-row: 20 / 23;
     }
+    .skill-alter--imgBox{
+        bottom: -40px;
+
+    }
     .skill-alter--img{
         height: 150px ;
-        bottom: -35px;
     }
 
 }

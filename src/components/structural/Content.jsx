@@ -21,8 +21,8 @@ const Content = () => {
             <Intro text={""} img={myPhoto}/>
 
             <AboutMe/>
-            <Catalog header={ t("main:header-projects")} sortBy={sortBy}/>
-            <CV header={ t("main:header-CV")}/>
+            <Catalog sortBy={sortBy}/>
+            <CV />
 
 
         </Fragment>

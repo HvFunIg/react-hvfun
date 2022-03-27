@@ -7,7 +7,7 @@ const Technologies = ({header,stack,grid,alter}) => {
         <div key={header} className={`about-ice  about-ice--skill skill-${grid}`}>
             <h3 className={"skill-header " + (alter ? "skill-alter--header" : "")}>{header}</h3>
             {alter ?
-                <div className="skill-alter-imgBox">
+                <div className="skill-alter--imgBox">
                     {alter}
                 </div> :
                 stack.map((tech,index) =>

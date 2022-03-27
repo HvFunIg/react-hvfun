@@ -58,7 +58,7 @@ const Catalog = ({header,sortBy}) => {
         <section className="container-vertical " id="portfolio" name="portfolio">
             <div className="catalog">
                 <a id="portfolio" name="portfolio"></a>
-                <h1  className={"Michroma " + "catalog-header"}>{header}</h1>
+                <h1  className={"Michroma " + "catalog-header"}>{t("projects-header")}</h1>
                 {sort}
                 <div className={"catalog-items " + (activeCategory === "all" ? '' : " catalog-flex")} >
                     {activeCategory === "all" ?

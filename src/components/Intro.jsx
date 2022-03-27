@@ -9,9 +9,14 @@ import useWindowDimensions from "../js/useWindowDimensions";
 import Social from "./Social";
 
 import Bookmark from "../img/Fragments/Rect_Intro.svg"
+import Modal from "./structural/Modal";
+import Project from "./Project";
+import ContactMe from "./ContactMe";
 const Intro = ({img}) => {
-    const { t, i18n } = useTranslation('intro'); //t - основная функция для перевода
+    const { t, i18n } = useTranslation(['intro','header']); //t - основная функция для перевода
     const {width } = useWindowDimensions();
+    const [isModal, setModal] = React.useState(false)
+    const onClose = () => setModal(false)
 
     return(
         <section className="intro" >
@@ -23,16 +28,28 @@ const Intro = ({img}) => {
             <div className="intro-bookmark">
 
                     <div className="intro-text">
-                    <h1> {t("hello")}</h1>
+                    <h1> {t("intro:hello")}</h1>
                     <p className="strikethrough light-neon">{t("strikethrough1")} </p>
                     <p className="strikethrough light-neon">{t("strikethrough2")} </p>
                     <p className="light-neon">{t("desc")} </p>
                 </div>
                 <div className="intro-contacts">
                     <div className="intro-buttons">
-                        <Button className="intro-button" text={i18n.t("link_contact",{ns:"header"})}></Button>
-                        <Button className="intro-button" text={i18n.t("link_CV",{ns:"header"})}></Button>
+                        <Button className="intro-button" text={t("header:link_contact")}  handler={() => setModal(true)}></Button>
+                        <Button className="intro-button" text={t("header:link_CV")} ></Button>
+
                     </div>
+                    <Modal
+                        visible={isModal}
+                        title={t("header:link_contact")}
+                        content={
+                            <ContactMe/>
+                        }
+                        footer={
+                            ''
+                        }
+                        onClose={onClose}
+                    />
                    <Social/>
                 </div>
 

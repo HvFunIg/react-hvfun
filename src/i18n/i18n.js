@@ -23,7 +23,6 @@ i18n.use (initReactI18next)
                 intro:intro_en,
                 projects:projects_en,
                 CV:CV_en,
-                main:main_en,
                 about:about_en,
             },
             ru:{
@@ -31,7 +30,6 @@ i18n.use (initReactI18next)
                 intro:intro_ru,
                 projects:projects_ru,
                 CV:CV_ru,
-                main:main_ru,
                 about:about_ru
             }
         },
