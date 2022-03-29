@@ -20,6 +20,13 @@
     width: 30%;
     padding: 0 10px 0 20px;
 }
+.contact-line--message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
 .contact-line--input{
     width: 60%;
     min-width: 60%;
@@ -74,6 +81,23 @@
     color: var(--orange-light);
     border: 1px solid var(--orange-light);
 }
+#radar{
+    align-self: center;
+    margin-top: 20px;
+}
+.anima-center{
+    transform-origin: 57px 57px;
+    animation: 15s infinite rotation linear;
+}
+.anima-inner{
+    transform-origin: 57px 57px;
+    animation: 3s infinite rotation linear;
+}
+.anima-outer{
+    transform-origin: 57px 57px;
+    animation: 6s infinite rotation linear;
+}
+
 @media screen and (max-width: 650px){
     .contact-line{
         align-items: flex-start;
@@ -98,4 +122,8 @@
     .contact-button{
         margin: 5px;
     }
+}
+@keyframes rotation {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(359deg) }
 }

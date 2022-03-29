@@ -16,7 +16,7 @@ const Intro = ({img}) => {
     const { t, i18n } = useTranslation(['intro','header']); //t - основная функция для перевода
     const {width } = useWindowDimensions();
     const [isModal, setModal] = React.useState(false)
-    const onClose = () => setModal(false)
+    const onClose = () => setModal(false);
 
     return(
         <section className="intro" >
@@ -43,7 +43,7 @@ const Intro = ({img}) => {
                         visible={isModal}
                         title={t("header:link_contact")}
                         content={
-                            <ContactMe/>
+                            <ContactMe handlerClose={onClose}/>
                         }
                         footer={
                             ''

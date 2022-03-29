@@ -10,7 +10,8 @@ import CV_ru from "./ru/CV_ru.json"
 import CV_en from "./en/CV_en.json"
 import about_en from "./en/about_en.json"
 import about_ru from "./ru/about_ru.json"
-
+import contacts_en from "./en/contacts_en.json"
+import contacts_ru from "./ru/contacts_ru.json"
 
 i18n.use (initReactI18next)
     .init({
@@ -22,13 +23,15 @@ i18n.use (initReactI18next)
                 projects:projects_en,
                 CV:CV_en,
                 about:about_en,
+                contacts:contacts_en
             },
             ru:{
                 header:header_ru,
                 intro:intro_ru,
                 projects:projects_ru,
                 CV:CV_ru,
-                about:about_ru
+                about:about_ru,
+                contacts:contacts_ru
             }
         },
 
