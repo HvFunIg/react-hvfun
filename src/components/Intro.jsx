@@ -36,7 +36,7 @@ const Intro = ({img}) => {
                 <div className="intro-contacts">
                     <div className="intro-buttons">
                         <Button className="intro-button" text={t("header:link_contact")}  handler={() => setModal(true)}></Button>
-                        <Button className="intro-button" text={t("header:link_CV")} ></Button>
+                        <a href="../files/CV.pdf" download className="intro-button intro-CV" > {t("header:link_CV")} </a>
 
                     </div>
                     <Modal

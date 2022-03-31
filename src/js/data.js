@@ -1,15 +1,17 @@
 
-import img1 from "../img/Projects/Prom/preview.JPG"
+import PromPrew from "../img/Projects/Prom/preview.JPG"
+import HeliosPrew from "../img/Projects/Helios/preview.jpg"
 import PromMockup from "../img/Projects/Prom/Mockups.png"
+import HeliosMockup from "../img/Projects/Helios/Mockups.png"
+
 const img2 = "http://via.placeholder.com/640x360"
 const img3 = "http://via.placeholder.com/640x360"
-const img4 = "http://via.placeholder.com/640x360"
 
 
 export const catalogItems = [
     {
         header:"prom",
-        img:img1,
+        img:PromPrew,
         images:PromMockup,
         linkTo:"https://priceless-agnesi-345083.netlify.app",
         date:2021,
@@ -19,21 +21,6 @@ export const catalogItems = [
                 type:"stack-design",
                 techArray:[
                     {
-                        name:"Figma",
-                        rate:"5",
-                        main:"#FF551F",
-                        secondary:"#7f1f97"
-                    },{
-                        name:"Figma",
-                        rate:"5",
-                        main:"#FF551F",
-                        secondary:"#7f1f97"
-                    },{
-                        name:"Figma",
-                        rate:"5",
-                        main:"#FF551F",
-                        secondary:"#7f1f97"
-                    },{
                         name:"Figma",
                         rate:"5",
                         main:"#FF551F",
@@ -52,13 +39,13 @@ export const catalogItems = [
                 techArray:[
                     {
                         name:"HTML",
-                        rate:"3",
+                        rate:"2",
                         main:"#b63e04",
                         secondary:"#ffffff"
                     },
                     {
                         name:"JS",
-                        rate:"3",
+                        rate:"4",
                         main:"#d0ae34",
                         secondary:"#ffffff"
                     },
@@ -76,23 +63,110 @@ export const catalogItems = [
     {
         header:"timetable",
         img:img2,
-        linkTo:"link2",
+        linkTo:"",
         date:2022,
-        type:[1]
+        type:[1],
+        stack:[
+            {
+                type:"AR",
+                techArray:[
+                    {
+                        name:"Vuforia Engine",
+                        rate:"3",
+                        main:"#FF551F",
+                        secondary:"#7f1f97"
+                    },
+                    {
+                        name:"Unity",
+                        rate:"5",
+                        main:"#00144e",
+                        secondary:"#00c4ff"
+                    }
+                ]
+            },
+            {
+                type:"stack-programming--short",
+                techArray:[
+                    {
+                        name:"C#",
+                        rate:"5",
+                        main:"#b63e04",
+                        secondary:"#ffffff"
+                    },
+                ]
+            }
+        ]
     },
     {
         header:"personal",
         img:img3,
-        linkTo:"link3",
         date:2022,
-        type:[0]
+        type:[0],
+        stack:[
+            {
+                type:"stack-design",
+                techArray:[
+                    {
+                        name:"Figma",
+                        rate:"5",
+                        main:"#FF551F",
+                        secondary:"#7f1f97"
+                    },
+                    {
+                        name:"Photoshop",
+                        rate:"2",
+                        main:"#00144e",
+                        secondary:"#00c4ff"
+                    }
+                ]
+            },
+            {
+                type:"Frontend",
+                techArray:[
+                    {
+                        name:"HTML",
+                        rate:"2",
+                        main:"#b63e04",
+                        secondary:"#ffffff"
+                    },
+                    {
+                        name:"JS",
+                        rate:"4",
+                        main:"#d0ae34",
+                        secondary:"#ffffff"
+                    },
+                    {
+                        name:"ReactJS",
+                        rate:"5",
+                        main:"#757575",
+                        secondary:"#0BDDEB"
+                    },
+
+                ]
+            }
+        ]
     },
     {
         header:"hammer",
-        img:img4,
-        linkTo:"link4",
+        img:HeliosPrew,
+        images:HeliosMockup,
+        linkTo:"https://www.figma.com/file/gtQys5YLSA7ubuerhOSk8b/Helios?node-id=0%3A1",
         date:2020,
-        type:[0]
+        type:[0],
+        stack:[
+            {
+                type:"stack-design",
+                techArray:[
+                    {
+                        name:"Figma",
+                        rate:"5",
+                        main:"#FF551F",
+                        secondary:"#7f1f97"
+                    }
+                ]
+            }
+        ]
+
     }
 ]
 

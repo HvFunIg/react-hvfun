@@ -2,6 +2,8 @@
     height: 20px;
 }
 .sort-main ul{
+    display: flex;
+    list-style-type: none;
     height: 20px;
     padding: 0;
 }
@@ -62,11 +64,6 @@
 .catalog-header{
     color: white;
     padding: 20px;
-}
-
-.catalog ul{
-    display: flex;
-    list-style-type: none;
 }
 
 .catalog select{

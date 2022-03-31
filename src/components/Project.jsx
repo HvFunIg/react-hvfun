@@ -7,7 +7,7 @@ import hex from "../img/Fragments/Hex.svg"
 import RateBlock from "./structural/RateBlock";
 import useWindowDimensions from "../js/useWindowDimensions";
 
-const Project = ({title,stack,img,longDesc,link}) => {
+const Project = ({title,stack,img,longDesc,list,link}) => {
     const {  width } = useWindowDimensions();
     const {t} = useTranslation('projects,CV'); //t - основная функция для перевода
     const rate = (rate,main="white",secondary="black") => {
@@ -51,6 +51,11 @@ const Project = ({title,stack,img,longDesc,link}) => {
                 </div>
                 <article className="project-text">
                     {longDesc}
+                    <ul>
+                        {list != null ? list.map((li)=><li> {li}</li>)
+                            :''
+                        }
+                    </ul>
                 </article>
             </div>
         </>

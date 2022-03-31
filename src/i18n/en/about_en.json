@@ -1,10 +1,11 @@
 {
   "header":"About me",
-  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. ",
+  "bio": "I'm a student, almost have master's degree. I have experience in working at big company. Also I used to work both in a small teams and just by myself. Now I am self-employed Frontend (React) developer. I am also dealing with site design,backend and databases. And I'm interested in AR development.",
   "header-facts": "Some facts",
   "facts": [
     "Playing guitar",
-    "Like board games"
+    "Like board games",
+    "Hate jogging"
   ],
   "JobsArray": [
     {

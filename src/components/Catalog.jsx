@@ -68,6 +68,7 @@ const Catalog = ({header,sortBy}) => {
                                 <CatalogItem
                                     key = {index}
                                     {...item}
+                                    list={t(`projects.${item.header}.list`,{returnObjects:true})}
                                     typeWord={t(`type.${item.type}`)}
                                     title={t(`projects.${item.header}.title`)}
                                     longDesc={t(`projects.${item.header}.longDesc`)}
@@ -83,6 +84,7 @@ const Catalog = ({header,sortBy}) => {
                                     <CatalogItem
                                         key = {index}
                                         {...item}
+                                        list={t(`projects.${item.header}.list`,{returnObjects:true})}
                                         typeWord={t(sortBy[item.type])}
                                         title={t(`projects.${item.header}.title`)}
                                         longDesc={t(`projects.${item.header}.longDesc`)}

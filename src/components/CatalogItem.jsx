@@ -8,7 +8,18 @@ import Project from "./Project";
 
 
 
-const CatalogItem = ({title,longDesc,shortDesc,img,images,linkTo,typeWord,date, stack}) => {
+const CatalogItem = ({
+     title,
+     longDesc,
+     shortDesc,
+     img,
+     images,
+     linkTo,
+     typeWord,
+     date,
+     stack,
+     list
+}) => {
     const {t} = useTranslation('projects'); //t - основная функция для перевода
     const {  width } = useWindowDimensions();
 
@@ -42,7 +53,7 @@ const CatalogItem = ({title,longDesc,shortDesc,img,images,linkTo,typeWord,date, 
                     visible={isModal}
                     title={title}
                     content={
-                        <Project title={title} img={images} stack={stack} longDesc={longDesc}/>}
+                        <Project title={title} list={list} img={images} stack={stack} longDesc={longDesc}/>}
                     footer={
                         linkTo ?
                         <div className="project-footer">

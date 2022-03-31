@@ -53,7 +53,28 @@
     min-width: 230px;
     margin: 2px 15px;
 }
+.intro-CV{
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 7px;
 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 2rem;
+
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.intro-CV:hover{
+    color: var(--blue-light);
+    border-color:  var(--blue-light);
+    box-shadow: 1px 1px 10px 0px var(--blue-light), 1px 1px 5px 1px var(--blue-light) inset;
+    cursor: pointer;
+}
 .intro-button:nth-child(2){
     position: relative;
     left: 20px;
@@ -92,6 +113,9 @@
 @media screen and (max-width: 1024px){
     .intro{
         padding: 60px 0;
+    }
+    .intro-CV{
+        font-size: 14px;
     }
     .intro-svg{
         height: 400px;

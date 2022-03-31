@@ -14,23 +14,45 @@
    "projects":{
      "personal": {
        "title": "Personal website",
-       "shortDesc": "Beautiful Hi-Tech site, isn't it?",
-       "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. "
+       "shortDesc": "Beautiful Hi-Tech site,which you are looking at.",
+       "longDesc": "Personal site-portfolio. Adaptive, as you might have noticed. I can give you a link to GitHub, if you want to see the code. Here is some interesting libraries I used: ",
+       "list": [
+         "i18n for changing languages;",
+         "EmailJs for sending emails;",
+         "PropTypes for checking types of props."
+       ]
      },
      "prom": {
        "title": "Prom Snab Zashita",
-       "shortDesc":"Website for Promsnabzashita",
-       "longDesc": "Сайт-визитка, был разработан для компании ООО 'Промснабзащита'. Состоит из нескольких страниц. Из особенностей сайта стоит отметить: уникальные иконки, плавный бесконечный слайдер, который всегда в движении.  Сайт не был введен в эксплуатацию по независящим от меня причинам."
+       "shortDesc":"Website for 'Promsnabzashita' company",
+       "longDesc": "Promo site with several pages. This site didn't go to the production for reasons beyond my control. Maybe the client lost his interest in it. But they still paid me... Anyway. This site has:",
+       "list": [
+         "Unique icons;",
+         "Smooth, infinite, always moving slider;",
+         "Adaptability"
+       ]
      },
      "timetable": {
        "title": "AR Timetable",
-       "shortDesc":"AR application for Android 7.0+.",
-       "longDesc": "Сайт-визитка, был разработан для компании ООО 'Промснабзащита'. Состоит из нескольких страниц. Из особенностей сайта стоит отметить: уникальные иконки, плавный бесконечный слайдер, который всегда в движении.  Сайт не был введен в эксплуатацию по независящим от меня причинам."
+       "shortDesc":"AR application for tracking timetable for university auditorium.",
+       "longDesc": "This is my master's work. When user points his device on a nameplate with auditorium number, he can see the schedule of this auditorium. Here is the algorithm of this app: ",
+       "list": [
+         "The user scans the auditorium number plate;",
+         "The application recognizes the plate;",
+         "The application recognizes the number inside the plate;",
+         "A number of requests are being made to the university timetable server;",
+         "The schedule for the current day is displayed under the audience number;",
+         "If desired, the user can request a schedule for other days."
+       ]
      },
      "hammer": {
-       "title": "Hammer Packaging",
-       "shortDesc":"This project is not in use.",
-       "longDesc": "Сайт-визитка, был разработан для компании ООО 'Промснабзащита'. Состоит из нескольких страниц. Из особенностей сайта стоит отметить: уникальные иконки, плавный бесконечный слайдер, который всегда в движении.  Сайт не был введен в эксплуатацию по независящим от меня причинам."
+       "title": "Helios Labelprint",
+       "shortDesc":"Website for 'Helios Labelprint' company",
+       "longDesc": "It should have been a promo site. Unfortunately, customer disappeared when I gave him site layout.It taught me not to work without prepayment... ",
+       "list": [
+         "Unique Logo;",
+         "Adaptability"
+       ]
      }
    },
 

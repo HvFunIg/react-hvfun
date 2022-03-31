@@ -1,10 +1,11 @@
 {
   "header":"О себе",
-  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet pulvinar neque, eget congue purus ornare vitae. In consequat ipsum molestie, sollicitudin risus sed, congue arcu. ",
+  "bio": "Я студент, магистрант второго курса. Имеется и опыт работы в компании, и в небольших командах, В данный момент самозанятый Frontend разработчик, пишу на ReactJS. Есть опыт как в дизайне сайтов, так и в работе с базами данных и бэкендом. Также интересуюсь разработкой приложений Дополненной Реальности.",
   "header-facts": "Немного фактов",
   "facts": [
     "Играю на гитаре",
-    "Настольщик"
+    "Настольщик",
+    "Не люблю бегать"
   ],
   "JobsArray": [
     {
