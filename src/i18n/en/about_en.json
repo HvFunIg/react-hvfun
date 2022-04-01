@@ -1,6 +1,6 @@
 {
   "header":"About me",
-  "bio": "I'm a student, almost have master's degree. I have experience in working at big company. Also I used to work both in a small teams and just by myself. Now I am self-employed Frontend (React) developer. I am also dealing with site design,backend and databases. And I'm interested in AR development.",
+  "bio": "I'm a student, almost have master's degree. I used to work at big company and also both in a small teams and just by myself. Now I'm self-employed Frontend (React) developer. I'm dealing with site design,backend and databases. And I'm interested in AR development.",
   "header-facts": "Some facts",
   "facts": [
     "Playing guitar",
@@ -29,6 +29,10 @@
     {
       "type": "Jobs",
       "stack": [
+        {
+          "place": "Self-employed",
+          "period": "2018 - 2019"
+        },
         {
           "period": "2019 - 2020",
           "place": "\"LANIT \", web-developer"

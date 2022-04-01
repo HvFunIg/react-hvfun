@@ -14,7 +14,7 @@
    "projects":{
      "personal": {
        "title": "Personal website",
-       "shortDesc": "Beautiful Hi-Tech site,which you are looking at.",
+       "shortDesc": "Beautiful Hi-Tech site which you are looking at.",
        "longDesc": "Personal site-portfolio. Adaptive, as you might have noticed. I can give you a link to GitHub, if you want to see the code. Here is some interesting libraries I used: ",
        "list": [
          "i18n for changing languages;",
@@ -24,7 +24,7 @@
      },
      "prom": {
        "title": "Prom Snab Zashita",
-       "shortDesc":"Website for 'Promsnabzashita' company",
+       "shortDesc":"Website for 'Promsnabzashita' company.",
        "longDesc": "Promo site with several pages. This site didn't go to the production for reasons beyond my control. Maybe the client lost his interest in it. But they still paid me... Anyway. This site has:",
        "list": [
          "Unique icons;",
@@ -47,7 +47,7 @@
      },
      "hammer": {
        "title": "Helios Labelprint",
-       "shortDesc":"Website for 'Helios Labelprint' company",
+       "shortDesc":"Website for 'Helios Labelprint' company.",
        "longDesc": "It should have been a promo site. Unfortunately, customer disappeared when I gave him site layout.It taught me not to work without prepayment... ",
        "list": [
          "Unique Logo;",

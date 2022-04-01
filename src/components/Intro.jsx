@@ -10,7 +10,6 @@ import Social from "./Social";
 
 import Bookmark from "../img/Fragments/Rect_Intro.svg"
 import Modal from "./structural/Modal";
-import Project from "./Project";
 import ContactMe from "./ContactMe";
 const Intro = ({img}) => {
     const { t, i18n } = useTranslation(['intro','header']); //t - основная функция для перевода
@@ -36,7 +35,7 @@ const Intro = ({img}) => {
                 <div className="intro-contacts">
                     <div className="intro-buttons">
                         <Button className="intro-button" text={t("header:link_contact")}  handler={() => setModal(true)}></Button>
-                        <a href="../files/CV.pdf" download className="intro-button intro-CV" > {t("header:link_CV")} </a>
+                        <a href="../files/CV.pdf" download className="intro-button intro-CV Michroma" > {t("header:link_CV")} </a>
 
                     </div>
                     <Modal

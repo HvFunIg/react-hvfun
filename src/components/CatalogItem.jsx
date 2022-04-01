@@ -28,7 +28,7 @@ const CatalogItem = ({
 
 
     return(
-        <div className={"catalog-item-content"}>
+        <div className={"catalog-item-content"} onClick={() => setModal(true)}>
 
             <div className="catalog-item--main">
                 {(width < 856) ? <p >{shortDesc}</p> : ''}

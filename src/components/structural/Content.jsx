@@ -20,7 +20,7 @@ const Content = () => {
         <Fragment>
             <Intro text={""} img={myPhoto}/>
 
-            <AboutMe/>
+            <AboutMe />
             <Catalog sortBy={sortBy}/>
             <CV />
 

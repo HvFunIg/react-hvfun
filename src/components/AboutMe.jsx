@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/about.css';
 import {useTranslation} from "react-i18next";
 import Jobs from "./Jobs";
+import AboutPhoto from "../img/About.jpg"
 
 const AboutMe = () => {
     const {t} = useTranslation('about'); //t - основная функция для перевода
@@ -11,7 +12,7 @@ const AboutMe = () => {
             <div className="about-ice">
                 <h2>{t("header")}</h2>
                 <div className="about-content">
-                    <img className="about-img" src="http://via.placeholder.com/640x360" alt=""/>
+                    <img className="about-img" src={AboutPhoto} alt=""/>
                     <p>
                         {t("bio")}
                     </p>

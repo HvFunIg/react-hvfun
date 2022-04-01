@@ -16,7 +16,7 @@
 
     border-radius: 22px;
 
-    padding: 20px;
+    padding: 10px 20px;
     margin: 10px 20px;
 }
 .about-ice:hover{
@@ -158,9 +158,12 @@
         min-width: 310px;
     }
     .about-content{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: block;
+
+    }
+    .about-img{
+        float: left;
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 550px) {
@@ -176,7 +179,7 @@
         text-align: center;
     }
     .about-img{
-        width: 80%;
-        max-width: none;
+        width: 70%;
+        height: auto;
     }
 }
