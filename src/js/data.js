@@ -1,8 +1,10 @@
 
 import PromPrew from "../img/Projects/Prom/preview.JPG"
 import HeliosPrew from "../img/Projects/Helios/preview.jpg"
+import PersonalPrew from "../img/Projects/Personal/preview.JPG"
 import PromMockup from "../img/Projects/Prom/Mockups.png"
 import HeliosMockup from "../img/Projects/Helios/Mockups.png"
+import PersonalMockup from "../img/Projects/Personal/Mockups.png"
 
 const img2 = "http://via.placeholder.com/640x360"
 const img3 = "http://via.placeholder.com/640x360"
@@ -99,7 +101,8 @@ export const catalogItems = [
     },
     {
         header:"personal",
-        img:img3,
+        img:PersonalPrew ,
+        images: PersonalMockup,
         date:2022,
         type:[0],
         stack:[
